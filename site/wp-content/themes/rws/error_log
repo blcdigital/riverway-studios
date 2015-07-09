@@ -1,0 +1,8 @@
+[25-May-2012 23:18:59 UTC] PHP Fatal error:  Call to undefined function get_header() in /home/riverway/public_html/wp-content/themes/rws/index.php on line 16
+[11-May-2013 06:01:33 Europe/London] PHP Fatal error:  Call to undefined function get_header() in /home/riverway/public_html/wp-content/themes/rws/index.php on line 16
+[28-Nov-2013 21:44:52 Europe/London] PHP Fatal error:  Call to undefined function get_header() in /home/riverway/public_html/wp-content/themes/rws/index.php on line 16
+[23-Jan-2014 13:51:58 Europe/London] PHP Fatal error:  Call to undefined function get_header() in /home/riverway/public_html/wp-content/themes/rws/404.php on line 10
+[23-Jan-2014 22:10:30 Europe/London] PHP Fatal error:  Call to undefined function get_header() in /home/riverway/public_html/wp-content/themes/rws/404.php on line 10
+[28-Feb-2014 19:41:17 Europe/London] PHP Fatal error:  Call to undefined function get_header() in /home/riverway/public_html/wp-content/themes/rws/index.php on line 16
+[24-Jun-2014 10:25:13 UTC] PHP Fatal error:  Call to undefined function get_header() in /home/riverway/public_html/wp-content/themes/rws/index.php on line 16
+[03-Aug-2014 02:58:39 UTC] PHP Fatal error:  Call to undefined function get_header() in /home/riverway/public_html/wp-content/themes/rws/index.php on line 16

@@ -30,3 +30,5 @@ Thumbs.db
 
 # Project files #
 #################
+.vagrant/
+wp-config_live.php

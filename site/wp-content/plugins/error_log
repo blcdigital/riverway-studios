@@ -1,0 +1,4 @@
+[01-Jun-2013 17:56:27 Europe/London] PHP Fatal error:  Call to undefined function add_action() in /home/riverway/public_html/wp-content/plugins/hello.php on line 60
+[29-Apr-2015 02:24:20 UTC] PHP Fatal error:  Call to undefined function add_action() in /home/riverway/public_html/wp-content/plugins/hello.php on line 60
+[12-May-2015 16:03:08 UTC] PHP Fatal error:  Call to undefined function add_action() in /home/riverway/public_html/wp-content/plugins/hello.php on line 60
+[13-May-2015 12:27:24 UTC] PHP Fatal error:  Call to undefined function add_action() in /home/riverway/public_html/wp-content/plugins/hello.php on line 60
