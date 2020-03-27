@@ -1,36 +1,59 @@
 {
-    "name": "wordpress-vagrant-starkers",
-    "description": "Baseline Wordpress build using Vagrant and Starkers",
-    "version": "0.1.1",
-    "author": "Jasal Vadgama - http://blacklabelcreative.com/",
-    "repository": {
-        "type": "git",
-        "url": "tbc"
-    },
-    "licenses": [
-        {
-            "type": "GNU General Public License v2 or later",
-            "url": "http://www.gnu.org/licenses/gpl-2.0.html"
-        }
-    ],
-    "main": "/",
-    "scripts": {
-        "test": "grunt test",
-        "build": "grunt build",
-        "deploy": "grunt deploy",
-        "all": "grunt"
-    },
-    "engines": {
-        "node": ">= 0.10.x"
-    },
-    "devDependencies": {
-        "grunt": "0.4.x",
-        "grunt-contrib-clean": "0.6.x",
-        "grunt-contrib-copy": "0.6.x",
-        "grunt-contrib-cssmin": "0.10.x",
-        "grunt-contrib-jshint": "0.11.x",
-        "grunt-contrib-uglify": "0.7.x",
-        "grunt-contrib-watch": "0.6.x",
-        "grunt-sass": "0.18.x"
-    }
+  "name": "riverway-studios",
+  "description": "Riverway Studios website",
+  "version": "0.1.0",
+  "author": "Jasal Vadgama <jasal@blacklabelcreative.com>",
+  "private": true,
+  "scripts": {
+    "build": "gatsby build",
+    "develop": "gatsby develop",
+    "format": "prettier --write \"**/*.{js,jsx,json,md}\"",
+    "start": "npm run develop",
+    "serve": "gatsby serve",
+    "clean": "gatsby clean",
+    "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1",
+    "flow": "flow status"
+  },
+  "dependencies": {
+    "@sendgrid/mail": "^6.5.5",
+    "formik": "^2.1.4",
+    "gatsby": "^2.20.8",
+    "gatsby-image": "^2.3.1",
+    "gatsby-plugin-flow": "^1.2.1",
+    "gatsby-plugin-manifest": "^2.3.3",
+    "gatsby-plugin-netlify": "^2.2.1",
+    "gatsby-plugin-offline": "^3.1.2",
+    "gatsby-plugin-react-helmet": "^3.2.1",
+    "gatsby-plugin-sharp": "^2.5.3",
+    "gatsby-plugin-styled-components": "^3.2.1",
+    "gatsby-source-filesystem": "^2.2.2",
+    "gatsby-transformer-sharp": "^2.4.3",
+    "polished": "^3.5.1",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
+    "react-helmet": "^5.2.1",
+    "styled-components": "^5.0.1",
+    "yup": "^0.28.3"
+  },
+  "devDependencies": {
+    "flow-bin": "^0.121.0",
+    "husky": "^4.2.3",
+		"lint-staged": "^10.0.9",
+    "prettier": "^2.0.2"
+  },
+  "browserslist": [
+		">0.2%",
+		"not dead",
+		"not ie <= 11",
+		"not op_mini all"
+	],
+	"eslintConfig": {
+		"extends": "react-app"
+	},
+	"lint-staged": {
+		"src/**/*.{js,jsx,ts,tsx,json,css,scss,md}": [
+			"prettier --config .prettierrc --write",
+			"git add"
+		]
+	}
 }
