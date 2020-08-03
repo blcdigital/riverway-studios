@@ -32,9 +32,19 @@ function SEO({ description, lang, meta, title }) {
       htmlAttributes={{
         lang,
       }}
+      link={[
+        {
+          href: `https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@400;700&display=swap`,
+          rel: `stylesheet`,
+        },
+      ]}
       title={title}
       titleTemplate={`%s | ${site.siteMetadata.title}`}
       meta={[
+        {
+          name: `viewport`,
+          content: `width=device-width, initial-scale=1, shrink-to-fit=no, viewport-fit=cover`,
+        },
         {
           name: `description`,
           content: metaDescription,
