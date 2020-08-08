@@ -58,18 +58,27 @@ const GlobalStyle = createGlobalStyle`
   }
 
   p {
-    marign-top: 0;
+    margin-top: 0;
+
+    &:last-of-type {
+      margin-bottom: 0;
+    }
   }
 
   a {
-    border-bottom: 1px solid ${getColor({ luminosity: 50 })};
+    border-bottom: 1px solid ${getColor({
+      color: COLORS.boston,
+    })};
     color: ${getColor()};
     text-decoration: none;
     transition: border 0.2s;
 
     &:hover,
     &:focus {
-      border-bottom-color: ${getColor({ luminosity: 100 })};
+      border-bottom-color: ${getColor({
+        color: COLORS.boston,
+        luminosity: 1,
+      })};
     }
   }
 

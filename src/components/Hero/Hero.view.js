@@ -17,7 +17,7 @@ function Hero({ isExpanded, title }) {
 
 Hero.propTypes = {
   isExpanded: PropTypes.bool,
-  title: PropTypes.string,
+  title: PropTypes.string.isRequired,
 };
 
 Hero.defaultProps = {

@@ -1,6 +1,11 @@
 const BASE_COLOR = 'black';
 export const COLORS = {
   // brand colors
+  boston: {
+    h: 208,
+    s: 54,
+    l: 52,
+  },
   pebble: {
     h: 43,
     s: 6,

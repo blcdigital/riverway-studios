@@ -4,6 +4,7 @@ import { Link } from 'gatsby';
 import { COLORS, getColor } from 'styles/color';
 import { SPACING, getSpacing } from 'styles/dimensions';
 import media from 'styles/media';
+import { getFontStyle } from 'styles/typography';
 import { resetButton, resetList } from 'styles/utils';
 
 const WrapperSt = styled.header`
@@ -71,6 +72,7 @@ const NavigationSt = styled.nav`
   }
 
   a {
+    ${getFontStyle({ size: 16 })}
     text-transform: uppercase;
     border: 0;
   }

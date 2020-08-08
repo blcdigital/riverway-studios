@@ -1,6 +1,6 @@
 import { getColor } from 'styles/color';
 
-const BASE_FONT_SIZE = 16;
+const BASE_FONT_SIZE = 18;
 export const WEIGHTS = {
   regular: '400',
   bold: '700',
