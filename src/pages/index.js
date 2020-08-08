@@ -8,7 +8,10 @@ const IndexPage = () => (
   <Layout>
     <SEO title="Home" />
 
-    <Hero title="A flexible recording and rehearsal space in the heart of Essex" />
+    <Hero
+      isExpanded
+      title="A flexible recording and rehearsal space in the heart of Essex"
+    />
   </Layout>
 );
 

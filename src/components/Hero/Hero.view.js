@@ -5,9 +5,9 @@ import ContainerFluid from 'components/_atoms/ContainerFluid';
 
 import { WrapperSt } from './Hero.style';
 
-function Hero({ title }) {
+function Hero({ isExpanded, title }) {
   return (
-    <WrapperSt>
+    <WrapperSt isExpanded={isExpanded}>
       <ContainerFluid>
         <h1>{title}</h1>
       </ContainerFluid>
@@ -16,7 +16,12 @@ function Hero({ title }) {
 }
 
 Hero.propTypes = {
+  isExpanded: PropTypes.bool,
   title: PropTypes.string,
+};
+
+Hero.defaultProps = {
+  isExpanded: false,
 };
 
 export default Hero;

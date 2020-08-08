@@ -11,7 +11,7 @@ const WrapperSt = styled.section`
   margin-top: -86px;
   padding: calc(86px + ${getSpacing(SPACING.large)})
     ${getSpacing(SPACING.large)} ${getSpacing(SPACING.xl)};
-  min-height: 80vh;
+  min-height: ${({ isExpanded }) => (isExpanded ? `80vh` : `500px`)};
   background: ${getColor({ color: COLORS.pebble })};
   color: ${getColor({ color: COLORS.white })};
   text-align: center;
