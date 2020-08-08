@@ -5,9 +5,11 @@ import ContaienrFluid from 'components/_atoms/ContainerFluid';
 
 import { WrapperSt, ContentSt, ImageSt } from './ImageText.style';
 
-function ImageText({ children, image }) {
+function ImageText({ children, image, ...rest }) {
+  console.log({ ...rest });
+
   return (
-    <WrapperSt>
+    <WrapperSt {...rest}>
       <ContaienrFluid>
         <ImageSt>{image && <img alt="" src={image} />}</ImageSt>
         <ContentSt>{children}</ContentSt>
@@ -17,6 +19,7 @@ function ImageText({ children, image }) {
 }
 
 WrapperSt.propTypes = {
+  backgroundColor: PropTypes.string,
   children: PropTypes.node.isRequired,
   image: PropTypes.string,
 };
