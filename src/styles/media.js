@@ -4,7 +4,7 @@ export const BREAKPOINTS = {
   tiny: 320,
   small: 500,
   medium: 768,
-  large: 900,
+  large: 920,
   wide: 1200,
 };
 

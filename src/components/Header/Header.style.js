@@ -1,4 +1,4 @@
-import styled from 'styled-components';
+import styled, { css } from 'styled-components';
 import { Link } from 'gatsby';
 
 import { COLORS, getColor } from 'styles/color';

@@ -1,6 +1,7 @@
 import styled, { css } from 'styled-components';
 
 import { COLORS, getColor } from 'styles/color';
+import media from 'styles/media';
 
 const WrapperSt = styled.span`
   display: inline-block;
@@ -15,16 +16,30 @@ const WrapperSt = styled.span`
       height: 40px;
       overflow: hidden;
 
+      ${media.large`
+        width: 286px;
+        height: 49px;
+      `};
+
       svg {
         position: absolute;
         top: 0;
         right: 0;
         height: 40px;
+
+        ${media.large`
+          position: static;
+          height: 49px;
+        `};
       }
 
       .a,
       .b {
         display: none;
+
+        ${media.large`
+          display: inline-block;
+        `};
       }
     `};
 
