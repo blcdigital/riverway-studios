@@ -3,6 +3,7 @@ import { normalize } from 'polished';
 
 import { COLORS, getColor } from 'styles/color';
 import { SPACING, getSpacing } from 'styles/dimensions';
+import media from 'styles/media';
 import { WEIGHTS, getDefaultFontStyle, getFontStyle } from 'styles/typography';
 
 const GlobalStyle = createGlobalStyle`
@@ -23,8 +24,15 @@ const GlobalStyle = createGlobalStyle`
   h1, h2 {
     margin-top: 0;
     ${getFontStyle({ size: 40, weight: WEIGHTS.bold })};
+    letter-spacing: 3px;
     line-height: 1;
     text-transform: uppercase;
+  }
+
+  h1 {
+    ${media.large`
+      ${getFontStyle({ size: 60, weight: WEIGHTS.bold })};
+    `};
   }
 
   h2 {

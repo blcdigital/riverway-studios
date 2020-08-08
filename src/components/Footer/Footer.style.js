@@ -7,7 +7,8 @@ import { getFontStyle } from 'styles/typography';
 import { resetList } from 'styles/utils';
 
 const WrapperSt = styled.footer`
-  padding: ${getSpacing(SPACING.xl)} ${getSpacing(SPACING.large)};
+  padding: ${getSpacing(SPACING.xl)} ${getSpacing(SPACING.large)}
+    ${getSpacing(SPACING.large)};
   background: ${getColor()};
   color: ${getColor({ color: COLORS.white })};
 

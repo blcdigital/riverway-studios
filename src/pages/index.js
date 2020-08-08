@@ -1,14 +1,14 @@
 import React from 'react';
-import { Link } from 'gatsby';
 
 import Layout from 'components/_atoms/Layout';
 import SEO from 'components/_atoms/SEO';
+import Hero from 'components/Hero';
 
 const IndexPage = () => (
   <Layout>
     <SEO title="Home" />
 
-    <h1>Homepage</h1>
+    <Hero title="A flexible recording and rehearsal space in the heart of Essex" />
   </Layout>
 );
 
