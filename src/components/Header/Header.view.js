@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
-import { Link } from 'gatsby';
 
 import ContaienrFluid from 'components/_atoms/ContainerFluid';
 import Logo from 'components/_atoms/Logo';
+import Menu from 'components/_atoms/Menu';
 
 import {
   WrapperSt,
@@ -31,33 +31,7 @@ function Header({ ...rest }) {
           </NavigationToggleSt>
 
           <NavigationSt isOpen={isOpen}>
-            <ul>
-              <li>
-                <Link to="/recording" onClick={handleNavigationClick}>
-                  Recording
-                </Link>
-              </li>
-              <li>
-                <Link to="/rehearsal" onClick={handleNavigationClick}>
-                  Rehearsal
-                </Link>
-              </li>
-              <li>
-                <Link to="/tour" onClick={handleNavigationClick}>
-                  Tour
-                </Link>
-              </li>
-              <li>
-                <Link to="/vouchers" onClick={handleNavigationClick}>
-                  Vouchers
-                </Link>
-              </li>
-              <li>
-                <Link to="/contact-us" onClick={handleNavigationClick}>
-                  Contact Us
-                </Link>
-              </li>
-            </ul>
+            <Menu handleNavigationClick={handleNavigationClick} />
           </NavigationSt>
         </div>
       </ContaienrFluid>
