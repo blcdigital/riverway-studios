@@ -11,6 +11,11 @@ export const COLORS = {
     s: 6,
     l: 75,
   },
+  mako: {
+    h: 219,
+    s: 10,
+    l: 28,
+  },
   // base colours
   black: {
     h: 0,

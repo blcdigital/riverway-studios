@@ -4,7 +4,6 @@ import PropTypes from 'prop-types';
 import { WrapperSt } from './Button.style';
 
 function Button({ children, ...rest }) {
-  console.log({ ...rest });
   return <WrapperSt {...rest}>{children}</WrapperSt>;
 }
 

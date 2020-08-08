@@ -5,6 +5,7 @@ import Button from 'components/_atoms/Button';
 import Layout from 'components/_atoms/Layout';
 import SEO from 'components/_atoms/SEO';
 import Hero from 'components/Hero';
+import IconList from 'components/IconList';
 import ImageText, { CtaSt } from 'components/ImageText';
 
 const IndexPage = () => (
@@ -14,6 +15,27 @@ const IndexPage = () => (
     <Hero
       isExpanded
       title="A flexible recording and rehearsal space in the heart of Essex"
+    />
+
+    <IconList
+      items={[
+        {
+          icon: 'https://placekeanu.com/100/85',
+          text: 'Professional multitrack recording',
+        },
+        {
+          icon: 'https://placekeanu.com/100/85',
+          text: 'Three fully kitted rehearsal rooms',
+        },
+        {
+          icon: 'https://placekeanu.com/100/85',
+          text: 'Mixing, mastering and remixing',
+        },
+        {
+          icon: 'https://placekeanu.com/100/85',
+          text: 'Mixing, mastering and remixing',
+        },
+      ]}
     />
 
     <ImageText image="https://placekeanu.com/500">
