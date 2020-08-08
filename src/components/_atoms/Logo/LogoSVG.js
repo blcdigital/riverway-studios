@@ -1,5 +1,4 @@
 import React from 'react';
-import Logo from 'components/_atoms/Logo';
 
 function LogoSVG() {
   return (
