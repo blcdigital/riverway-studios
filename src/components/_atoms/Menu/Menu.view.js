@@ -5,27 +5,47 @@ function Menu({ handleNavigationClick }) {
   return (
     <ul>
       <li>
-        <Link to="/recording" onClick={handleNavigationClick}>
+        <Link
+          activeClassName="is-active"
+          to="/recording"
+          onClick={handleNavigationClick}
+        >
           Recording
         </Link>
       </li>
       <li>
-        <Link to="/rehearsal" onClick={handleNavigationClick}>
+        <Link
+          activeClassName="is-active"
+          to="/rehearsal"
+          onClick={handleNavigationClick}
+        >
           Rehearsal
         </Link>
       </li>
       <li>
-        <Link to="/tour" onClick={handleNavigationClick}>
+        <Link
+          activeClassName="is-active"
+          to="/tour"
+          onClick={handleNavigationClick}
+        >
           Tour
         </Link>
       </li>
       <li>
-        <Link to="/vouchers" onClick={handleNavigationClick}>
+        <Link
+          activeClassName="is-active"
+          to="/vouchers"
+          onClick={handleNavigationClick}
+        >
           Vouchers
         </Link>
       </li>
       <li>
-        <Link to="/contact-us" onClick={handleNavigationClick}>
+        <Link
+          activeClassName="is-active"
+          to="/contact-us"
+          onClick={handleNavigationClick}
+        >
           Contact Us
         </Link>
       </li>

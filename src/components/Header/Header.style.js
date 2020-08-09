@@ -74,12 +74,18 @@ const NavigationSt = styled.nav`
   a {
     ${getFontStyle({ size: 16 })}
     text-transform: uppercase;
-    border: 0;
+    border-bottom-color: transparent;
     color: ${getColor()};
+    opacity: 0.6;
 
     &:hover,
     &:focus {
-      color: ${getColor({ color: COLORS.boston })};
+      border-bottom-color: transparent;
+      opacity: 1;
+    }
+
+    &.is-active {
+      border-bottom-color: ${getColor({ color: COLORS.boston })};
     }
   }
 `;

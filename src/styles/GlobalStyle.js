@@ -117,7 +117,7 @@ const GlobalStyle = createGlobalStyle`
     color: ${getColor({ color: COLORS.boston })};
     text-decoration: none;
     will-change: background, border, color;
-    transition: background 0.2s, border 0.2s, color 0.2s;
+    transition: background 0.2s, border 0.2s, color 0.2s, opacity 0.2s;
 
     &:hover,
     &:focus {
