@@ -95,19 +95,15 @@ const GlobalStyle = createGlobalStyle`
   }
 
   a {
-    border-bottom: 1px solid ${getColor({
-      color: COLORS.boston,
-    })};
-    color: ${getColor()};
+    border-bottom: 1px solid transparent;
+    color: ${getColor({ color: COLORS.boston })};
     text-decoration: none;
-    transition: border 0.2s;
+    will-change: background, border, color;
+    transition: background 0.2s, border 0.2s, color 0.2s;
 
     &:hover,
     &:focus {
-      border-bottom-color: ${getColor({
-        color: COLORS.boston,
-        luminosity: 1,
-      })};
+      border-bottom-color: ${getColor({ color: COLORS.boston })};
     }
   }
 

@@ -75,6 +75,12 @@ const NavigationSt = styled.nav`
     ${getFontStyle({ size: 16 })}
     text-transform: uppercase;
     border: 0;
+    color: ${getColor()};
+
+    &:hover,
+    &:focus {
+      color: ${getColor({ color: COLORS.boston })};
+    }
   }
 `;
 

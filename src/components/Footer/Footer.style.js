@@ -46,6 +46,11 @@ const ContactSt = styled.div`
   a {
     border: 0;
     color: ${getColor({ color: COLORS.white })};
+
+    &:hover,
+    &:focus {
+      color: ${getColor({ color: COLORS.boston })};
+    }
   }
 `;
 
@@ -75,6 +80,11 @@ const NavigationSt = styled.nav`
     color: ${getColor({ color: COLORS.white })};
     letter-spacing: 1px;
     text-transform: uppercase;
+
+    &:hover,
+    &:focus {
+      color: ${getColor({ color: COLORS.boston })};
+    }
   }
 `;
 

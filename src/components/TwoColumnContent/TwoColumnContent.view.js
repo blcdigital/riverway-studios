@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 
 import ContaienrFluid from 'components/_atoms/ContainerFluid';
 
-import { WrapperSt, TitleSt } from './TwoColumnText.style';
+import { WrapperSt, TitleSt } from './TwoColumnContent.style';
 
 function TwoColumnText({ children, title, ...rest }) {
   return (

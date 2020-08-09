@@ -8,10 +8,13 @@ import Hero from 'components/Hero';
 import ImageStrip from 'components/ImageStrip';
 import ImageText, { CtaSt } from 'components/ImageText';
 import Standfirst from 'components/Standfirst';
-import TwoColumnText, {
+import SingleColumnContent, {
+  CtaSt as SingleColumnCtaSt,
+} from 'components/SingleColumnContent';
+import TwoColumnContent, {
   ContentSt as TwoColumnSectionSt,
   CtaSt as TwoColumnCtaSt,
-} from 'components/TwoColumnText';
+} from 'components/TwoColumnContent';
 import { COLORS, getColor } from 'styles/color';
 
 const RecordingPage = () => (
@@ -27,7 +30,7 @@ const RecordingPage = () => (
       </p>
     </Standfirst>
 
-    <TwoColumnText>
+    <TwoColumnContent>
       <TwoColumnSectionSt>
         <p>
           All projects are run by Studio Producer, Jim White. With a first class
@@ -53,14 +56,14 @@ const RecordingPage = () => (
       </TwoColumnSectionSt>
 
       <TwoColumnSectionSt>Soundcloud widget</TwoColumnSectionSt>
-    </TwoColumnText>
+    </TwoColumnContent>
 
     <ImageStrip
       largeScreenImage="https://placekeanu.com/1920/522"
       smallScreenImage="https://placekeanu.com/960/522"
     />
 
-    <TwoColumnText title="Studio Features">
+    <TwoColumnContent title="Studio Features">
       <TwoColumnSectionSt>
         <h3 className="with-underline">Tech Spec</h3>
 
@@ -122,7 +125,7 @@ const RecordingPage = () => (
           <li>Miscellaneous Percussion</li>
         </ul>
       </TwoColumnSectionSt>
-    </TwoColumnText>
+    </TwoColumnContent>
 
     <ImageText
       backgroundColor={getColor({ color: COLORS.pebble })}
@@ -149,6 +152,25 @@ const RecordingPage = () => (
         </Button>
       </CtaSt>
     </ImageText>
+
+    <SingleColumnContent
+      align="center"
+      backgroundColor={getColor({ color: COLORS.pebble, luminosity: 90 })}
+      title="Pricing"
+    >
+      <p>
+        <b>
+          Got a bigger project in mind?{' '}
+          <Link to="/contact-us">Get in touch</Link>.
+        </b>
+      </p>
+
+      <SingleColumnCtaSt align="center">
+        <Button as={Link} level="button" to="/contact-us">
+          Book
+        </Button>
+      </SingleColumnCtaSt>
+    </SingleColumnContent>
 
     <ImageText
       backgroundColor={getColor({ color: COLORS.pebble })}

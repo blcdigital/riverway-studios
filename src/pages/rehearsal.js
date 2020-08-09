@@ -9,7 +9,7 @@ import Standfirst from 'components/Standfirst';
 import TwoColumnText, {
   ContentSt as TwoColumnSectionSt,
   CtaSt as TwoColumnCtaSt,
-} from 'components/TwoColumnText';
+} from 'components/TwoColumnContent';
 
 const RehearsalPage = () => (
   <Layout>
