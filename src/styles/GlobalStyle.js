@@ -125,6 +125,11 @@ const GlobalStyle = createGlobalStyle`
     }
   }
 
+  button {
+    will-change: background, border, color;
+    transition: background 0.2s, border 0.2s, color 0.2s;
+  }
+
   hr {
     margin: ${getSpacing(SPACING.xl)} 0;
     height: 1px;

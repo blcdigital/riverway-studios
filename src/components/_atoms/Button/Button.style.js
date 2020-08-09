@@ -9,11 +9,15 @@ const WrapperSt = styled.button`
   letter-spacing: 1px;
   text-transform: uppercase;
 
-  ${({ level }) =>
+  ${({ isNarrow, level }) =>
     level === 'button' &&
     css`
       ${getFontStyle({ size: 16 })};
-      padding: ${getSpacing(SPACING.large)} ${getSpacing(SPACING['2xl'])};
+      padding: ${
+        isNarrow
+          ? `${getSpacing()} ${getSpacing(SPACING.xl)}`
+          : `${getSpacing(SPACING.large)} ${getSpacing(SPACING['2xl'])}`
+      }};
       background: ${getColor({ color: COLORS.boston })};
       border: 0;
       border-radius: 1000px;
