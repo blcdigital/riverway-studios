@@ -1,5 +1,6 @@
 import React from 'react';
 
+import Button from 'components/_atoms/Button';
 import Layout from 'components/_atoms/Layout';
 import SEO from 'components/_atoms/SEO';
 import ContactForm from 'components/ContactForm';
@@ -25,6 +26,18 @@ const IndexPage = () => (
     <TwoColumnContent>
       <TwoColumnSectionSt>
         <p>
+          <a href="tel:07760 160638">
+            <b>07760 160638</b>
+          </a>
+        </p>
+
+        <p>
+          <a href="mailto:mail@riverwaystudios.co.uk">
+            <b>mail@riverwaystudios.co.uk</b>
+          </a>
+        </p>
+
+        <p>
           All projects are run by Studio Producer, Jim White. With a first class
           BA degree in Music Technology and many years of studio production
           experience working with many of the area’s biggest bands, your project
@@ -41,7 +54,19 @@ const IndexPage = () => (
       largeScreenImage={MapLarge}
       minHeight={400}
       smallScreenImage={MapSmall}
-    />
+    >
+      <Button
+        as="a"
+        href="https://www.google.co.uk/maps/place/Riverway+Studios/@51.7927073,0.1246865,16z/data=!4m5!3m4!1s0x47d89bb9be4ca027:0x879b6ae092acb48d!8m2!3d51.792704!4d0.1290639"
+        isNarrow
+        level="button"
+        rel="noreferrer noopnener"
+        target="_blank"
+        title="Find us on Google Maps"
+      >
+        Find us
+      </Button>
+    </ImageStrip>
 
     <ThreeColumnContent
       backgroundColor={getColor({ color: COLORS.pebble, luminosity: 90 })}

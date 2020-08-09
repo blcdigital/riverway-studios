@@ -3,9 +3,14 @@ import PropTypes from 'prop-types';
 
 import { BREAKPOINTS } from 'styles/media';
 
-import { WrapperSt, ImageSt } from './ImageStrip.style';
+import { WrapperSt, ContentSt, ImageSt } from './ImageStrip.style';
 
-function ImageStrip({ largeScreenImage, minHeight, smallScreenImage }) {
+function ImageStrip({
+  children,
+  largeScreenImage,
+  minHeight,
+  smallScreenImage,
+}) {
   return (
     <WrapperSt minHeight={minHeight}>
       <ImageSt minHeight={minHeight}>
@@ -15,11 +20,14 @@ function ImageStrip({ largeScreenImage, minHeight, smallScreenImage }) {
         />
         <img alt="" src={smallScreenImage} />
       </ImageSt>
+
+      {children && <ContentSt>{children}</ContentSt>}
     </WrapperSt>
   );
 }
 
 WrapperSt.propTypes = {
+  children: PropTypes.node,
   largeScreenImage: PropTypes.string.isRequired,
   minHeight: PropTypes.number,
   smallScreenImage: PropTypes.string.isRequired,
