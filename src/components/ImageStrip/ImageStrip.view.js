@@ -5,10 +5,10 @@ import { BREAKPOINTS } from 'styles/media';
 
 import { WrapperSt, ImageSt } from './ImageStrip.style';
 
-function ImageStrip({ largeScreenImage, smallScreenImage }) {
+function ImageStrip({ largeScreenImage, minHeight, smallScreenImage }) {
   return (
-    <WrapperSt>
-      <ImageSt>
+    <WrapperSt minHeight={minHeight}>
+      <ImageSt minHeight={minHeight}>
         <source
           media={`(min-width: ${BREAKPOINTS.medium}px)`}
           srcSet={largeScreenImage}
@@ -21,6 +21,7 @@ function ImageStrip({ largeScreenImage, smallScreenImage }) {
 
 WrapperSt.propTypes = {
   largeScreenImage: PropTypes.string.isRequired,
+  minHeight: PropTypes.number,
   smallScreenImage: PropTypes.string.isRequired,
 };
 

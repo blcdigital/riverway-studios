@@ -1,15 +1,24 @@
-import styled from 'styled-components';
-
-import { SPACING, getSpacing } from 'styles/dimensions';
+import styled, { css } from 'styled-components';
 
 const WrapperSt = styled.section`
-  margin: ${getSpacing(SPACING.large)} 0;
+  ${({ minHeight }) =>
+    minHeight &&
+    css`
+      min-height: ${minHeight}px;
+    `};
 `;
 
 const ImageSt = styled.picture`
   img {
     display: block;
     width: 100%;
+
+    ${({ minHeight }) =>
+      minHeight &&
+      css`
+        min-height: ${minHeight}px;
+        object-fit: cover;
+      `};
   }
 `;
 
