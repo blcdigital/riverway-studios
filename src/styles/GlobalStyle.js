@@ -101,7 +101,7 @@ const GlobalStyle = createGlobalStyle`
   dd {
     display: list-item;
     list-style: disc;
-    margin-left: 0.8rem;
+    margin-left: 1rem;
   }
 
   p {
@@ -125,8 +125,11 @@ const GlobalStyle = createGlobalStyle`
     }
   }
 
-  strong {
-    font-weight: 700;
+  hr {
+    margin: ${getSpacing(SPACING.xl)} 0;
+    height: 1px;
+    border: 1px solid ${getColor({ color: COLORS.black, luminosity: 80 })};
+    border-width: 1px 0 0;
   }
 `;
 

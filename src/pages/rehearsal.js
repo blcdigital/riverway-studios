@@ -1,7 +1,5 @@
 import React from 'react';
-import { Link } from 'gatsby';
 
-import Button from 'components/_atoms/Button';
 import Layout from 'components/_atoms/Layout';
 import SEO from 'components/_atoms/SEO';
 import Hero from 'components/Hero';
@@ -13,13 +11,10 @@ import Pricing, {
   PriceItemValueSt,
 } from 'components/Pricing';
 import Standfirst from 'components/Standfirst';
-import SingleColumnContent, {
-  CtaSt as SingleColumnCtaSt,
-} from 'components/SingleColumnContent';
-import TwoColumnContent, {
-  ContentSt as TwoColumnSectionSt,
-  CtaSt as TwoColumnCtaSt,
-} from 'components/TwoColumnContent';
+import SingleColumnContent from 'components/SingleColumnContent';
+import ThreeColumnContent, {
+  ContentSt as ThreeColumnSectionSt,
+} from 'components/ThreeColumnContent';
 import { COLORS, getColor } from 'styles/color';
 
 const RehearsalPage = () => (
@@ -35,33 +30,96 @@ const RehearsalPage = () => (
       </p>
     </Standfirst>
 
-    <TwoColumnContent>
-      <TwoColumnSectionSt>
-        <p>
-          All projects are run by Studio Producer, Jim White. With a first class
-          BA degree in Music Technology and many years of studio production
-          experience working with many of the area’s biggest bands, your project
-          will be in good hands!
-        </p>
+    <ThreeColumnContent title="House equipment">
+      <ThreeColumnSectionSt>
+        <h3 className="with-underline">Drums</h3>
 
         <p>
-          We offer a very flexible digital recording suite, capable of producing
-          fantastic results for your project. We offer free consultations at the
-          studio, for all bands interested in making their next recording with
-          us. You will get to see the studio, listen to past recordings at each
-          stage of development and ask any questions directly to the Producer.
-          We promise no hard sell! Email or call for details.
+          We are kitted out with high quality Mapex Pro Drum Kits. We maintain
+          our kits to a high standard for your benefit.
         </p>
 
-        <TwoColumnCtaSt>
-          <Button as={Link} to="/contact-us">
-            Hear an example
-          </Button>
-        </TwoColumnCtaSt>
-      </TwoColumnSectionSt>
+        <dl>
+          <dt>
+            <b>Each kit consists of:</b>
+          </dt>
+          <dd>
+            <b>Bass Drum with Pedal</b>
+          </dd>
+          <dd>
+            <b>Snare Drum with Stand</b>
+          </dd>
+          <dd>
+            <b>Two Rack toms, One floor Tom</b>
+          </dd>
+          <dd>
+            <b>Three cymbal stands*</b>
+          </dd>
+          <dd>
+            <b>Hi-Hat Stand with Clutch</b>
+          </dd>
+          <dd>
+            <b>High Quality Drum Stool</b>
+          </dd>
+        </dl>
 
-      <TwoColumnSectionSt>Soundcloud widget</TwoColumnSectionSt>
-    </TwoColumnContent>
+        <p>
+          * Brassware (cymbals and hi-hats) is not included, so do remember to
+          bring your own, plus additional cymbal stands if you require more than
+          those provided
+        </p>
+      </ThreeColumnSectionSt>
+
+      <ThreeColumnSectionSt>
+        <h3 className="with-underline">Mics and PA</h3>
+
+        <h4>Full PA system</h4>
+
+        <h4>Mics</h4>
+        <p>2 x Shure SM58 Microphones, inc. leads and stands.</p>
+
+        <h4>Mixer</h4>
+        <p>
+          8-Channel Mackie Mini Mixer (2 house mic inputs + 6 additional inputs
+          for mics/DI instruments).
+        </p>
+
+        <h3 className="with-underline">Facilities</h3>
+        <ul className="no-bullet">
+          <li>Tea and coffee with seating area</li>
+          <li>WC</li>
+          <li>Free Wi-Fi</li>
+          <li>Tuck shop with drinks and snacks</li>
+        </ul>
+      </ThreeColumnSectionSt>
+
+      <ThreeColumnSectionSt>
+        <h3 className="with-underline">Amp hire</h3>
+
+        <p>
+          <b>Bass Amp</b>
+          <br />
+          250W Combo amp with built in tuner, overdrive and iOS/Android
+          compatible multieffects.
+          <br />
+          <b>£4</b> per amp per session.
+        </p>
+
+        <hr />
+
+        <p>
+          <b>Guitar Amp</b>
+          <br />
+          60W Combo amp with distortion channel.
+          <br />
+          <b>£3</b> per amp per session.
+        </p>
+
+        <hr />
+
+        <p>Please add these to your booking when arranging your rehearsals.</p>
+      </ThreeColumnSectionSt>
+    </ThreeColumnContent>
 
     <SingleColumnContent
       align="center"
