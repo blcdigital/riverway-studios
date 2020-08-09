@@ -1,8 +1,11 @@
 import React from 'react';
+import { Link } from 'gatsby';
 
+import Button from 'components/_atoms/Button';
 import Layout from 'components/_atoms/Layout';
 import SEO from 'components/_atoms/SEO';
 import Hero from 'components/Hero';
+import ImageStrip from 'components/ImageStrip';
 import Pricing, {
   PriceItemSt,
   PriceItemDescriptionSt,
@@ -16,6 +19,9 @@ import ThreeColumnContent, {
   ContentSt as ThreeColumnSectionSt,
 } from 'components/ThreeColumnContent';
 import { COLORS, getColor } from 'styles/color';
+
+import TourLarge from 'images/rehearsal-tour-promo-large.jpg';
+import TourSmall from 'images/rehearsal-tour-promo-small.jpg';
 
 const RehearsalPage = () => (
   <Layout>
@@ -212,6 +218,16 @@ const RehearsalPage = () => (
         </PriceItemSt>
       </Pricing>
     </SingleColumnContent>
+
+    <ImageStrip
+      largeScreenImage={TourLarge}
+      minHeight={400}
+      smallScreenImage={TourSmall}
+    >
+      <Button as={Link} to="/tour" isNarrow level="clear">
+        Take a tour
+      </Button>
+    </ImageStrip>
   </Layout>
 );
 

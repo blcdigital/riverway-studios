@@ -29,6 +29,27 @@ const WrapperSt = styled.button`
       }
     `};
 
+  ${({ isNarrow, level }) =>
+    level === 'clear' &&
+    css`
+      ${getFontStyle({ size: 16 })};
+      padding: ${
+        isNarrow
+          ? `${getSpacing()} ${getSpacing(SPACING.xl)}`
+          : `${getSpacing(SPACING.large)} ${getSpacing(SPACING['2xl'])}`
+      }};
+      background: transparent;
+      border: 1px solid ${getColor({ color: COLORS.white })};
+      border-radius: 1000px;
+      color: ${getColor({ color: COLORS.white })};
+
+      &:hover,
+      &:focus {
+        background: ${getColor({ color: COLORS.boston, luminosity: 30 })};
+        border-color: ${getColor({ color: COLORS.boston, luminosity: 30 })};
+      }
+    `};
+
   ${({ level }) =>
     level === 'link' &&
     css`
