@@ -80,16 +80,34 @@ const GlobalStyle = createGlobalStyle`
   ul {
     margin-top: 0;
 
+    &:last-child {
+      margin-bottom: 0;
+    }
+
     &.no-bullet {
       list-style: none;
       padding-left: 0;
     }
   }
 
+  dl {
+    margin: 0 0 ${getSpacing(SPACING.large)};
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  dd {
+    display: list-item;
+    list-style: disc;
+    margin-left: 0.8rem;
+  }
+
   p {
     margin-top: 0;
 
-    &:last-of-type {
+    &:last-child {
       margin-bottom: 0;
     }
   }

@@ -7,6 +7,12 @@ import SEO from 'components/_atoms/SEO';
 import Hero from 'components/Hero';
 import ImageStrip from 'components/ImageStrip';
 import ImageText, { CtaSt } from 'components/ImageText';
+import Pricing, {
+  PriceItemSt,
+  PriceItemDurationSt,
+  PriceItemTitleSt,
+  PriceItemValueSt,
+} from 'components/Pricing';
 import Standfirst from 'components/Standfirst';
 import SingleColumnContent, {
   CtaSt as SingleColumnCtaSt,
@@ -158,6 +164,38 @@ const RecordingPage = () => (
       backgroundColor={getColor({ color: COLORS.pebble, luminosity: 90 })}
       title="Pricing"
     >
+      <Pricing disclaimer="1 day is 8 hours">
+        <PriceItemSt>
+          <PriceItemTitleSt>By the hour</PriceItemTitleSt>
+
+          <PriceItemValueSt>£30</PriceItemValueSt>
+
+          <PriceItemDurationSt>
+            <b>per hour</b>
+          </PriceItemDurationSt>
+        </PriceItemSt>
+
+        <PriceItemSt>
+          <PriceItemTitleSt>By the day</PriceItemTitleSt>
+
+          <PriceItemValueSt>£195</PriceItemValueSt>
+
+          <PriceItemDurationSt>
+            <b>1 day session</b>
+          </PriceItemDurationSt>
+        </PriceItemSt>
+
+        <PriceItemSt>
+          <PriceItemTitleSt>Mastering</PriceItemTitleSt>
+
+          <PriceItemValueSt>£55 - 75</PriceItemValueSt>
+
+          <PriceItemDurationSt>
+            <b>per track</b>
+          </PriceItemDurationSt>
+        </PriceItemSt>
+      </Pricing>
+
       <p>
         <b>
           Got a bigger project in mind?{' '}
