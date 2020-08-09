@@ -16,7 +16,7 @@ const WrapperSt = styled.section`
   > div {
     ${media.medium`
       display: flex;
-      flex-direction: row-reverse;
+      flex-wrap: wrap;
       align-items: flex-start;
       justify-content: space-between;
     `};
@@ -24,8 +24,16 @@ const WrapperSt = styled.section`
 `;
 
 const ContentSt = styled.div`
+  + div {
+    margin-top: ${getSpacing(SPACING['2xl'])};
+
+    ${media.medium`
+      margin-top: 0;
+    `};
+  }
+
   ${media.medium`
-    width: calc(50% - ${getSpacing()});
+    width: calc(50% - ${getSpacing(SPACING.xl)});
   `};
 `;
 
@@ -33,21 +41,10 @@ const CtaSt = styled.p`
   margin-top: ${getSpacing(SPACING.xl)};
 `;
 
-const ImageSt = styled.div`
-  margin-bottom: ${getSpacing(SPACING.xl)};
-
-  ${media.medium`
-    margin: 0;
-    width: calc(50% - ${getSpacing()});
-  `};
-
-  img {
-    display: block;
-    margin: 0 auto;
-    width: 80%;
-    max-width: 500px;
-    border-radius: 1000px;
-  }
+const TitleSt = styled.h2`
+  margin-bottom: ${getSpacing(SPACING['2xl'])};
+  width: 100%;
+  text-align: center;
 `;
 
-export { WrapperSt, ContentSt, CtaSt, ImageSt };
+export { WrapperSt, ContentSt, CtaSt, TitleSt };

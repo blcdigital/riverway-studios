@@ -3,14 +3,14 @@ import PropTypes from 'prop-types';
 
 import ContaienrFluid from 'components/_atoms/ContainerFluid';
 
-import { WrapperSt, ContentSt, ImageSt } from './ImageText.style';
+import { WrapperSt, TitleSt } from './TwoColumnText.style';
 
-function ImageText({ children, image, ...rest }) {
+function TwoColumnText({ children, title, ...rest }) {
   return (
     <WrapperSt {...rest}>
       <ContaienrFluid>
-        <ImageSt>{image && <img alt="" src={image} />}</ImageSt>
-        <ContentSt>{children}</ContentSt>
+        {title && <TitleSt>{title}</TitleSt>}
+        {children}
       </ContaienrFluid>
     </WrapperSt>
   );
@@ -19,7 +19,7 @@ function ImageText({ children, image, ...rest }) {
 WrapperSt.propTypes = {
   backgroundColor: PropTypes.string,
   children: PropTypes.node.isRequired,
-  image: PropTypes.string,
+  title: PropTypes.string,
 };
 
-export default ImageText;
+export default TwoColumnText;

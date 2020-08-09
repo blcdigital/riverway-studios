@@ -47,13 +47,42 @@ const GlobalStyle = createGlobalStyle`
   }
 
   h3 {
-    margin-top: 0;
+    margin: 0 0 ${getSpacing(SPACING.xl)};
     ${getFontStyle({ size: 24, weight: WEIGHTS.bold })};
+    letter-spacing: 1px;
     line-height: 1;
     text-transform: uppercase;
 
     * + & {
       margin-top: ${getSpacing(SPACING.large)};
+    }
+  }
+
+  h4 {
+    margin: 0 0 ${getSpacing(SPACING.small)};
+    ${getFontStyle({ weight: WEIGHTS.bold })};
+    line-height: 1;
+    text-transform: uppercase;
+
+    *:not(h3) + & {
+      margin-top: ${getSpacing(SPACING.large)};
+    }
+  }
+
+  h1, h2, h3, h4 {
+    &.with-underline {
+      display: inline-block;
+      padding-bottom: ${getSpacing()};
+      border-bottom: 3px solid ${getColor({ luminosity: 75 })};
+    }
+  }
+
+  ul {
+    margin-top: 0;
+
+    &.no-bullet {
+      list-style: none;
+      padding-left: 0;
     }
   }
 
