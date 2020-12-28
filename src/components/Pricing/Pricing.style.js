@@ -41,7 +41,7 @@ const ListSt = styled.ul`
   ${media.medium`
     display: flex;
     flex-wrap: wrap;
-    ${({ isInner }) => isInner && `margin: 0 -${getSpacing(SPACING.xl)}`};
+    ${({ isInner }) => isInner && `margin: 0 -${getSpacing(SPACING.large)}`};
   `};
 `;
 
@@ -91,7 +91,7 @@ const PriceItemSt = styled.li`
   ${media.medium`
     padding: ${({ isInner }) =>
       isInner
-        ? `0 ${getSpacing(SPACING.xl)}`
+        ? `0 ${getSpacing(SPACING.large)}`
         : `${getSpacing()} ${getSpacing(SPACING.xl)}`};
     width: 50%;
 
