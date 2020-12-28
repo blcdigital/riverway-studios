@@ -38,10 +38,10 @@ const IndexPage = () => (
         </p>
 
         <p>
-          All projects are run by Studio Producer, Jim White. With a first class
-          BA degree in Music Technology and many years of studio production
-          experience working with many of the area’s biggest bands, your project
-          will be in good hands!
+          New clients – We take all debut rehearsal bookings via telephone, so
+          please either call us, or contact us here requesting a call back at a
+          convenient time. All bookings after your first booking can be made by
+          email, phone or text.
         </p>
       </TwoColumnSectionSt>
 
@@ -76,7 +76,7 @@ const IndexPage = () => (
       </ThreeColumnSectionSt>
 
       <ThreeColumnSectionSt>
-        <h3>Recording</h3>
+        <h3>Rehearsal</h3>
 
         <p>
           <b>
@@ -93,7 +93,7 @@ const IndexPage = () => (
           <li>6pm – 10pm</li>
           <li>7pm – 11pm</li>
           <li>8pm – Midnight</li>
-          <li>11pm – 3am (Nighthawk rate)</li>
+          <li>11pm – 3am (Nighthawk rate for existing clients only)</li>
         </ul>
       </ThreeColumnSectionSt>
 
@@ -102,21 +102,16 @@ const IndexPage = () => (
 
         <p>
           <b>
-            10am – 3am
-            <br />7 days a week
+            10am – 6pm
+            <br />
+            Monday - Friday
           </b>
         </p>
 
-        <p>Our usual session times are:</p>
-
-        <ul className="no-bullet">
-          <li>10am – 2pm</li>
-          <li>2pm – 6pm</li>
-          <li>6pm – 10pm</li>
-          <li>7pm – 11pm</li>
-          <li>8pm – Midnight</li>
-          <li>11pm – 3am (Nighthawk rate)</li>
-        </ul>
+        <p>
+          We can occasionally offer weekend recording, at a premium, booked in
+          advance.
+        </p>
       </ThreeColumnSectionSt>
     </ThreeColumnContent>
   </Layout>

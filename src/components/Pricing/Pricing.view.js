@@ -50,7 +50,7 @@ function Pricing({
               <li>6pm – 10pm</li>
               <li>7pm – 11pm</li>
               <li>8pm – Midnight</li>
-              <li>11pm – 3am (Nighthawk rate)</li>
+              <li>11pm – 3am (Nighthawk rate for existing clients only)</li>
             </ul>
           </div>
         </OpeningTimesSt>

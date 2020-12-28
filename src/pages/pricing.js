@@ -36,7 +36,10 @@ const RecordingPage = () => (
           <PriceItemValueSt>£30</PriceItemValueSt>
 
           <PriceItemDurationSt>
-            <b>per hour</b>
+            <b>
+              per hour
+              <br /> (3 hour minimum)
+            </b>
           </PriceItemDurationSt>
         </PriceItemSt>
 
@@ -73,7 +76,7 @@ const RecordingPage = () => (
         <PriceItemSt>
           <PriceItemTitleSt>Mastering</PriceItemTitleSt>
 
-          <PriceItemValueSt>£55 - 75</PriceItemValueSt>
+          <PriceItemValueSt>£60 - 90</PriceItemValueSt>
 
           <PriceItemDurationSt>
             <b>per track</b>
@@ -137,8 +140,8 @@ const RecordingPage = () => (
 
           <PriceItemDescriptionSt>
             <p>
-              Nighthawk rehearsals are an exclusive offer: These are rehearsals
-              booked for 11pm-3am, 7 days a week.
+              Off Peak rehearsals are available Monday to Friday between 10am
+              and 6pm.
             </p>
           </PriceItemDescriptionSt>
         </PriceItemSt>
@@ -154,8 +157,9 @@ const RecordingPage = () => (
 
           <PriceItemDescriptionSt>
             <p>
-              Nighthawk rehearsals are an exclusive offer: These are rehearsals
-              booked for 11pm-3am, 7 days a week.
+              Nighthawk rehearsals are booked for 11pm-3am, 7 days a week, and
+              are an exclusive offer for existing clients only. Not available to
+              debut bookings.
             </p>
           </PriceItemDescriptionSt>
         </PriceItemSt>
