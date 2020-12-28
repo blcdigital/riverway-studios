@@ -30,7 +30,7 @@ WrapperSt.propTypes = {
   children: PropTypes.node,
   largeScreenImage: PropTypes.string,
   minHeight: PropTypes.number,
-  smallScreenImage: PropTypes.string.isRequired,
+  smallScreenImage: PropTypes.string,
 };
 
 export default ImageStrip;
