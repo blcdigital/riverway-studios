@@ -5,7 +5,6 @@ module.exports = {
     author: `@riverwaystudios`,
   },
   plugins: [
-    `gatsby-plugin-flow`,
     `gatsby-plugin-resolve-src`,
     `gatsby-plugin-styled-components`,
     `gatsby-plugin-react-helmet`,
@@ -28,6 +27,8 @@ module.exports = {
         icon: `src/images/favicon.png`, // This path is relative to the root of the site.
       },
     },
+    `gatsby-transformer-sharp`,
+    `gatsby-plugin-sharp`,
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline
     // `gatsby-plugin-offline`,
