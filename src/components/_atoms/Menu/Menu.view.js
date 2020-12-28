@@ -7,6 +7,15 @@ function Menu({ handleNavigationClick }) {
       <li>
         <Link
           activeClassName="is-active"
+          to="/pricing"
+          onClick={handleNavigationClick}
+        >
+          Pricing
+        </Link>
+      </li>
+      <li>
+        <Link
+          activeClassName="is-active"
           to="/recording"
           onClick={handleNavigationClick}
         >
