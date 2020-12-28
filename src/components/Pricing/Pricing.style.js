@@ -34,12 +34,14 @@ const DisclaimerSt = styled.p`
 
 const ListSt = styled.ul`
   ${resetList};
-  padding: ${getSpacing(SPACING.large)} 0;
+  padding: ${({ isInner }) =>
+    isInner ? `0` : `${getSpacing(SPACING.large)} 0`};
   background: ${getColor({ color: COLORS.white })};
 
   ${media.medium`
     display: flex;
     flex-wrap: wrap;
+    ${({ isInner }) => isInner && `margin: 0 -${getSpacing(SPACING.xl)}`};
   `};
 `;
 
@@ -87,38 +89,50 @@ const PriceItemSt = styled.li`
   padding: ${getSpacing()} ${getSpacing(SPACING.large)};
 
   ${media.medium`
-    padding: ${getSpacing()} ${getSpacing(SPACING.xl)};
+    padding: ${({ isInner }) =>
+      isInner
+        ? `0 ${getSpacing(SPACING.xl)}`
+        : `${getSpacing()} ${getSpacing(SPACING.xl)}`};
     width: 50%;
 
     &:nth-child(-n+2) {
+      ${({ isInner }) => isInner && `padding-top: 0`};
       padding-bottom: ${getSpacing(SPACING.xl)};
     }
 
     &:nth-child(n + 3) {
-      padding-top: ${getSpacing(SPACING.xl)};
-      border-top: 1px solid ${getColor({
-        color: COLORS.black,
-        luminosity: 80,
-      })};
+      padding-top: ${({ isInner }) =>
+        isInner ? `0` : `${getSpacing(SPACING.xl)}`};
+      border-top: ${({ isInner }) =>
+        isInner
+          ? `0`
+          : `1px solid ${getColor({
+              color: COLORS.black,
+              luminosity: 80,
+            })}`};
     }
 
     &:nth-child(even) {
-      border-left: 1px solid ${getColor({
-        color: COLORS.black,
-        luminosity: 80,
-      })};
+      border-left: ${({ isInner }) =>
+        isInner
+          ? `0`
+          : `1px solid ${getColor({
+              color: COLORS.black,
+              luminosity: 80,
+            })}`};
     }
   `};
 
   ${media.large`
-    width: 25%;
+    width: ${({ isInner, isLarge }) =>
+      isLarge ? `50%` : isInner ? `33.33333%` : `25%`};
 
     &:nth-child(-n+2) {
       padding-bottom: ${getSpacing()};
     }
 
     &:nth-child(n + 3) {
-      padding-top: ${getSpacing()};
+      padding-top: ${({ isInner }) => (isInner ? `0` : `${getSpacing()}`)};
       border-top: 0;
     }
   `};
@@ -135,10 +149,13 @@ const PriceItemSt = styled.li`
     `};
 
     ${media.large`
-      border-left: 1px solid ${getColor({
-        color: COLORS.black,
-        luminosity: 80,
-      })};
+      border-left: ${({ isInner }) =>
+        isInner
+          ? `0`
+          : `1px solid ${getColor({
+              color: COLORS.black,
+              luminosity: 80,
+            })}`};
     `};
   }
 `;

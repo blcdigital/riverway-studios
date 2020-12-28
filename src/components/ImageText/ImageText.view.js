@@ -3,14 +3,23 @@ import PropTypes from 'prop-types';
 
 import ContaienrFluid from 'components/_atoms/ContainerFluid';
 
-import { WrapperSt, ContentSt, ImageSt } from './ImageText.style';
+import { WrapperSt, ContentSt, ImageSt, TitleSt } from './ImageText.style';
 
-function ImageText({ children, image, ...rest }) {
+function ImageText({ children, image, title, ...rest }) {
   return (
     <WrapperSt {...rest}>
       <ContaienrFluid>
-        <ImageSt>{image && <img alt="" src={image} />}</ImageSt>
-        <ContentSt>{children}</ContentSt>
+        {image && (
+          <ImageSt>
+            {' '}
+            <img alt="" src={image} />
+          </ImageSt>
+        )}
+        <ContentSt>
+          {title && <TitleSt>{title}</TitleSt>}
+
+          {children}
+        </ContentSt>
       </ContaienrFluid>
     </WrapperSt>
   );

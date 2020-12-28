@@ -34,15 +34,6 @@ function Menu({ handleNavigationClick }) {
       <li>
         <Link
           activeClassName="is-active"
-          to="/vouchers"
-          onClick={handleNavigationClick}
-        >
-          Vouchers
-        </Link>
-      </li>
-      <li>
-        <Link
-          activeClassName="is-active"
           to="/contact-us"
           onClick={handleNavigationClick}
         >

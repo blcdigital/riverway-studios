@@ -45,9 +45,13 @@ const ImageSt = styled.div`
     display: block;
     margin: 0 auto;
     width: 80%;
-    max-width: 500px;
+    max-width: 540px;
     border-radius: 1000px;
   }
 `;
 
-export { WrapperSt, ContentSt, CtaSt, ImageSt };
+const TitleSt = styled.h2`
+  margin-bottom: ${getSpacing(SPACING.xl)};
+`;
+
+export { WrapperSt, ContentSt, CtaSt, ImageSt, TitleSt };

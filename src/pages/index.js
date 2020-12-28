@@ -7,6 +7,11 @@ import SEO from 'components/_atoms/SEO';
 import Hero from 'components/Hero';
 import IconList from 'components/IconList';
 import ImageText, { CtaSt } from 'components/ImageText';
+import PromoStrip, {
+  ContentSt as PromoStripContentSt,
+} from 'components/PromoStrip';
+
+import AboutUsImage from 'images/about-us-home.png';
 
 const IndexPage = () => (
   <Layout>
@@ -38,7 +43,7 @@ const IndexPage = () => (
       ]}
     />
 
-    <ImageText image="https://placekeanu.com/500">
+    <ImageText image={AboutUsImage} title="About us">
       <p>
         Riverway Studios combines the best equipped music recording studios and
         the largest set of music rehearsal studios in the Hertfordshire and
@@ -59,6 +64,24 @@ const IndexPage = () => (
         </Button>
       </CtaSt>
     </ImageText>
+
+    <PromoStrip title="Ready?">
+      <PromoStripContentSt>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin porta
+          tempus blandit. Integer nisl erat, bibendum at aliquet vitae,
+          tristique nec tortor. Praesent non ligula non justo pulvinar blandit.
+          Suspendisse nec massa ante. Morbi sollicitudin vestibulum nibh vitae
+          maximus. Nulla ullamcorper convallis ex vitae.
+        </p>
+      </PromoStripContentSt>
+
+      <PromoStripContentSt>
+        <Button as={Link} level="button" to="/contact-us">
+          Book a consultation
+        </Button>
+      </PromoStripContentSt>
+    </PromoStrip>
   </Layout>
 );
 

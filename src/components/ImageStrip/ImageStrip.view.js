@@ -16,7 +16,7 @@ function ImageStrip({
       <ImageSt minHeight={minHeight}>
         <source
           media={`(min-width: ${BREAKPOINTS.medium}px)`}
-          srcSet={largeScreenImage}
+          srcSet={largeScreenImage || smallScreenImage}
         />
         <img alt="" src={smallScreenImage} />
       </ImageSt>
@@ -28,7 +28,7 @@ function ImageStrip({
 
 WrapperSt.propTypes = {
   children: PropTypes.node,
-  largeScreenImage: PropTypes.string.isRequired,
+  largeScreenImage: PropTypes.string,
   minHeight: PropTypes.number,
   smallScreenImage: PropTypes.string.isRequired,
 };

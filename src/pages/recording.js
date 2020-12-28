@@ -8,6 +8,7 @@ import Hero from 'components/Hero';
 import ImageStrip from 'components/ImageStrip';
 import ImageText, { CtaSt } from 'components/ImageText';
 import Pricing, {
+  PriceItemList,
   PriceItemSt,
   PriceItemDurationSt,
   PriceItemTitleSt,
@@ -22,6 +23,9 @@ import TwoColumnContent, {
   CtaSt as TwoColumnCtaSt,
 } from 'components/TwoColumnContent';
 import { COLORS, getColor } from 'styles/color';
+
+import AboutUsImage from 'images/about-us-home.png';
+import ImageStripImage from 'images/image-strip-recording.jpg';
 
 const RecordingPage = () => (
   <Layout>
@@ -64,10 +68,7 @@ const RecordingPage = () => (
       <TwoColumnSectionSt>Soundcloud widget</TwoColumnSectionSt>
     </TwoColumnContent>
 
-    <ImageStrip
-      largeScreenImage="https://placekeanu.com/1920/522"
-      smallScreenImage="https://placekeanu.com/960/522"
-    />
+    <ImageStrip smallScreenImage={ImageStripImage} />
 
     <TwoColumnContent title="Studio Features">
       <TwoColumnSectionSt>
@@ -135,7 +136,7 @@ const RecordingPage = () => (
 
     <ImageText
       backgroundColor={getColor({ color: COLORS.pebble })}
-      image="https://placekeanu.com/500"
+      image={AboutUsImage}
     >
       <h2>Mastering</h2>
 
@@ -175,14 +176,34 @@ const RecordingPage = () => (
           </PriceItemDurationSt>
         </PriceItemSt>
 
-        <PriceItemSt>
+        <PriceItemSt isLarge>
           <PriceItemTitleSt>By the day</PriceItemTitleSt>
 
-          <PriceItemValueSt>£195</PriceItemValueSt>
+          <PriceItemList isInner>
+            <PriceItemSt isInner>
+              <PriceItemValueSt>£195</PriceItemValueSt>
 
-          <PriceItemDurationSt>
-            <b>1 day session</b>
-          </PriceItemDurationSt>
+              <PriceItemDurationSt>
+                <b>1 day session</b>
+              </PriceItemDurationSt>
+            </PriceItemSt>
+
+            <PriceItemSt isInner>
+              <PriceItemValueSt>£380</PriceItemValueSt>
+
+              <PriceItemDurationSt>
+                <b>2 day session</b>
+              </PriceItemDurationSt>
+            </PriceItemSt>
+
+            <PriceItemSt isInner>
+              <PriceItemValueSt>£555</PriceItemValueSt>
+
+              <PriceItemDurationSt>
+                <b>3 day session</b>
+              </PriceItemDurationSt>
+            </PriceItemSt>
+          </PriceItemList>
         </PriceItemSt>
 
         <PriceItemSt>
@@ -212,7 +233,7 @@ const RecordingPage = () => (
 
     <ImageText
       backgroundColor={getColor({ color: COLORS.pebble })}
-      image="https://placekeanu.com/500"
+      image={AboutUsImage}
     >
       <h2>Voicover</h2>
 
