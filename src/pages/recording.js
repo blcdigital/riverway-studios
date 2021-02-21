@@ -25,13 +25,15 @@ import TwoColumnContent, {
 import { COLORS, getColor } from 'styles/color';
 
 import AboutUsImage from 'images/about-us-home.png';
+import HeroImage from 'images/header-img-recording.png';
+import HeroImage2x from 'images/header-img-recording@2x.png';
 import ImageStripImage from 'images/image-strip-recording.jpg';
 
 const RecordingPage = () => (
   <Layout>
     <SEO title="Recording" />
 
-    <Hero title="Recording" />
+    <Hero image={HeroImage} image2x={HeroImage2x} title="Recording" />
 
     <Standfirst>
       <p>
@@ -166,23 +168,10 @@ const RecordingPage = () => (
       title="Pricing"
     >
       <Pricing disclaimer="1 day is 8 hours">
-        <PriceItemSt>
-          <PriceItemTitleSt>By the hour</PriceItemTitleSt>
-
-          <PriceItemValueSt>£30</PriceItemValueSt>
-
-          <PriceItemDurationSt>
-            <b>
-              per hour
-              <br /> (3 hour minimum)
-            </b>
-          </PriceItemDurationSt>
-        </PriceItemSt>
-
         <PriceItemSt isLarge>
           <PriceItemTitleSt>By the day</PriceItemTitleSt>
 
-          <PriceItemList isInner>
+          <PriceItemList>
             <PriceItemSt isInner>
               <PriceItemValueSt>£195</PriceItemValueSt>
 
@@ -209,7 +198,25 @@ const RecordingPage = () => (
           </PriceItemList>
         </PriceItemSt>
 
-        <PriceItemSt>
+        <PriceItemSt borderSmallTop borderMediumTop borderLargeLeft>
+          <PriceItemTitleSt>By the hour</PriceItemTitleSt>
+
+          <PriceItemValueSt>£30</PriceItemValueSt>
+
+          <PriceItemDurationSt>
+            <b>
+              per hour
+              <br /> (3 hour minimum)
+            </b>
+          </PriceItemDurationSt>
+        </PriceItemSt>
+
+        <PriceItemSt
+          borderSmallTop
+          borderMediumLeft
+          borderMediumTop
+          borderLargeLeft
+        >
           <PriceItemTitleSt>Mastering</PriceItemTitleSt>
 
           <PriceItemValueSt>£60 - 90</PriceItemValueSt>
@@ -258,7 +265,7 @@ const RecordingPage = () => (
         your individual needs. As well as straightforward vocal reproduction, we
         can also mix music into the background, include sound effects and even
         process your voice in some very interesting ways. Please contact us via
-        email or telephone for more information. HEAR AN EXAMPLE
+        email or telephone for more information.
       </p>
 
       <CtaSt>

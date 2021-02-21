@@ -11,7 +11,7 @@ function IconList({ items }) {
       <ContainerFluid>
         <ListSt>
           {items.map(({ icon, text }) => (
-            <li>
+            <li key={icon}>
               <img alt="" src={icon} />
               {text}
             </li>

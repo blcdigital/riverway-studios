@@ -12,6 +12,12 @@ import PromoStrip, {
 } from 'components/PromoStrip';
 
 import AboutUsImage from 'images/about-us-home.png';
+import HeroImage from 'images/header-img-home.png';
+import HeroImage2x from 'images/header-img-home@2x.png';
+import IconLessons from 'images/icons/lessons.svg';
+import IconMixing from 'images/icons/mixing.svg';
+import IconRecording from 'images/icons/recording.svg';
+import IconRehearsal from 'images/icons/rehearsal.svg';
 
 const IndexPage = () => (
   <Layout>
@@ -19,26 +25,28 @@ const IndexPage = () => (
 
     <Hero
       isExpanded
+      image={HeroImage}
+      image2x={HeroImage2x}
       title="A flexible recording and rehearsal space in the heart of Essex"
     />
 
     <IconList
       items={[
         {
-          icon: 'https://placekeanu.com/100/85',
+          icon: IconRecording,
           text: 'Professional multitrack recording',
         },
         {
-          icon: 'https://placekeanu.com/100/85',
+          icon: IconRehearsal,
           text: 'Three fully kitted rehearsal rooms',
         },
         {
-          icon: 'https://placekeanu.com/100/85',
+          icon: IconMixing,
           text: 'Mixing, mastering and remixing',
         },
         {
-          icon: 'https://placekeanu.com/100/85',
-          text: 'Mixing, mastering and remixing',
+          icon: IconLessons,
+          text: 'Studio engineering lessons',
         },
       ]}
     />

@@ -3,26 +3,26 @@ import styled from 'styled-components';
 import { COLORS, getColor } from 'styles/color';
 import { SPACING, getSpacing } from 'styles/dimensions';
 import media from 'styles/media';
-import { WEIGHTS, getFontStyle } from 'styles/typography';
+import { getFontStyle } from 'styles/typography';
 import { resetList } from 'styles/utils';
 
 const WrapperSt = styled.section`
-  padding: ${getSpacing(SPACING.xl)} ${getSpacing(SPACING.large)};
+  padding: ${getSpacing(SPACING['2xl'])} ${getSpacing(SPACING.large)};
   background: ${getColor({ color: COLORS.mako })};
   color: ${getColor({ color: COLORS.white })};
 
   ${media.medium`
-    padding: ${getSpacing(SPACING['2xl'])} ${getSpacing(SPACING.large)};
+    padding: ${getSpacing(SPACING['3xl'])} ${getSpacing(SPACING.large)};
   `};
 `;
 
 const ListSt = styled.ul`
   ${resetList};
-  ${getFontStyle({ size: 14, weight: WEIGHTS.bold })}
+  ${getFontStyle({ size: 16 })}
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  letter-spacing: 1px;
+  letter-spacing: 2px;
   text-align: center;
   text-transform: uppercase;
 
@@ -44,7 +44,8 @@ const ListSt = styled.ul`
 
   img {
     display: block;
-    margin: 0 auto ${getSpacing(SPACING.large)};
+    margin: 0 auto ${getSpacing(SPACING['2xl'])};
+    height: 85px;
   }
 `;
 

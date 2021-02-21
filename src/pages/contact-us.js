@@ -14,6 +14,8 @@ import ThreeColumnContent, {
 } from 'components/ThreeColumnContent';
 import { COLORS, getColor } from 'styles/color';
 
+import HeroImage from 'images/header-img-recording.png';
+import HeroImage2x from 'images/header-img-recording@2x.png';
 import MapLarge from 'images/map-large.jpg';
 import MapSmall from 'images/map-small.jpg';
 
@@ -21,7 +23,7 @@ const IndexPage = () => (
   <Layout>
     <SEO title="Contact us" />
 
-    <Hero title="Get in touch" />
+    <Hero image={HeroImage} image2x={HeroImage2x} title="Get in touch" />
 
     <TwoColumnContent>
       <TwoColumnSectionSt>

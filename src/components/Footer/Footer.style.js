@@ -7,8 +7,7 @@ import { getFontStyle } from 'styles/typography';
 import { resetList } from 'styles/utils';
 
 const WrapperSt = styled.footer`
-  padding: ${getSpacing(SPACING.xl)} ${getSpacing(SPACING.large)}
-    ${getSpacing(SPACING.large)};
+  padding: ${getSpacing(SPACING.xl)} ${getSpacing(SPACING.large)};
   background: ${getColor()};
   color: ${getColor({ color: COLORS.white })};
 
@@ -20,6 +19,10 @@ const WrapperSt = styled.footer`
       justify-content: space-between;
     `};
   }
+
+  ${media.large`
+    padding: ${getSpacing(SPACING['2xl'])} ${getSpacing(SPACING.large)};
+  `};
 `;
 
 const ContactSt = styled.div`
@@ -59,8 +62,11 @@ const CopyrightSt = styled.p`
   margin: ${getSpacing(SPACING.xl)} 0 0;
   width: 100%;
   letter-spacing: 1px;
-  text-align: center;
   text-transform: uppercase;
+
+  ${media.medium`
+    text-align: right;
+  `};
 `;
 
 const NavigationSt = styled.nav`

@@ -30,14 +30,16 @@ function Footer() {
             </a>
           </p>
 
-          <SiteTitleSt>
-            <Link to="/">
-              <Logo withDarkBackground />
-            </Link>
-          </SiteTitleSt>
-        </ContactSt>
+          <div>
+            <SiteTitleSt>
+              <Link to="/">
+                <Logo withDarkBackground />
+              </Link>
+            </SiteTitleSt>
 
-        <CopyrightSt>&copy; 2020 Riverway Studios</CopyrightSt>
+            <CopyrightSt>&copy; 2020 Riverway Studios</CopyrightSt>
+          </div>
+        </ContactSt>
       </ContaienrFluid>
     </WrapperSt>
   );

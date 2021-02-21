@@ -30,23 +30,10 @@ const RecordingPage = () => (
       title="Recording"
     >
       <Pricing disclaimer="1 day is 8 hours">
-        <PriceItemSt>
-          <PriceItemTitleSt>By the hour</PriceItemTitleSt>
-
-          <PriceItemValueSt>£30</PriceItemValueSt>
-
-          <PriceItemDurationSt>
-            <b>
-              per hour
-              <br /> (3 hour minimum)
-            </b>
-          </PriceItemDurationSt>
-        </PriceItemSt>
-
         <PriceItemSt isLarge>
           <PriceItemTitleSt>By the day</PriceItemTitleSt>
 
-          <PriceItemList isInner>
+          <PriceItemList>
             <PriceItemSt isInner>
               <PriceItemValueSt>£195</PriceItemValueSt>
 
@@ -73,7 +60,25 @@ const RecordingPage = () => (
           </PriceItemList>
         </PriceItemSt>
 
-        <PriceItemSt>
+        <PriceItemSt borderSmallTop borderMediumTop borderLargeLeft>
+          <PriceItemTitleSt>By the hour</PriceItemTitleSt>
+
+          <PriceItemValueSt>£30</PriceItemValueSt>
+
+          <PriceItemDurationSt>
+            <b>
+              per hour
+              <br /> (3 hour minimum)
+            </b>
+          </PriceItemDurationSt>
+        </PriceItemSt>
+
+        <PriceItemSt
+          borderSmallTop
+          borderMediumLeft
+          borderMediumTop
+          borderLargeLeft
+        >
           <PriceItemTitleSt>Mastering</PriceItemTitleSt>
 
           <PriceItemValueSt>£60 - 90</PriceItemValueSt>
@@ -129,7 +134,7 @@ const RecordingPage = () => (
           </PriceItemDescriptionSt>
         </PriceItemSt>
 
-        <PriceItemSt>
+        <PriceItemSt borderSmallTop borderMediumLeft borderLargeLeft>
           <PriceItemTitleSt>Off-peak</PriceItemTitleSt>
 
           <PriceItemValueSt>£44</PriceItemValueSt>
@@ -146,7 +151,7 @@ const RecordingPage = () => (
           </PriceItemDescriptionSt>
         </PriceItemSt>
 
-        <PriceItemSt>
+        <PriceItemSt borderSmallTop borderMediumTop borderLargeLeft>
           <PriceItemTitleSt>Nighthawk session</PriceItemTitleSt>
 
           <PriceItemValueSt>£40</PriceItemValueSt>
@@ -164,7 +169,12 @@ const RecordingPage = () => (
           </PriceItemDescriptionSt>
         </PriceItemSt>
 
-        <PriceItemSt>
+        <PriceItemSt
+          borderSmallTop
+          borderMediumLeft
+          borderMediumTop
+          borderLargeLeft
+        >
           <PriceItemTitleSt>
             Solo <span>(off-peak only)</span>
           </PriceItemTitleSt>

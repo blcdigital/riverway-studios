@@ -34,14 +34,11 @@ const DisclaimerSt = styled.p`
 
 const ListSt = styled.ul`
   ${resetList};
-  padding: ${({ isInner }) =>
-    isInner ? `0` : `${getSpacing(SPACING.large)} 0`};
   background: ${getColor({ color: COLORS.white })};
 
   ${media.medium`
     display: flex;
     flex-wrap: wrap;
-    ${({ isInner }) => isInner && `margin: 0 -${getSpacing(SPACING.large)}`};
   `};
 `;
 
@@ -86,78 +83,44 @@ const OpeningTimesSt = styled.div`
 `;
 
 const PriceItemSt = styled.li`
-  padding: ${getSpacing()} ${getSpacing(SPACING.large)};
+  padding: ${({ isInner }) =>
+    isInner ? getSpacing() : getSpacing(SPACING.xl)};
+  ${({ borderSmallTop }) =>
+    borderSmallTop &&
+    `border-top: 1px solid ${getColor({
+      color: COLORS.black,
+      luminosity: 80,
+    })}`};
 
   ${media.medium`
-    padding: ${({ isInner }) =>
-      isInner
-        ? `0 ${getSpacing(SPACING.large)}`
-        : `${getSpacing()} ${getSpacing(SPACING.xl)}`};
-    width: 50%;
-
-    &:nth-child(-n+2) {
-      ${({ isInner }) => isInner && `padding-top: 0`};
-      padding-bottom: ${getSpacing(SPACING.xl)};
-    }
-
-    &:nth-child(n + 3) {
-      padding-top: ${({ isInner }) =>
-        isInner ? `0` : `${getSpacing(SPACING.xl)}`};
-      border-top: ${({ isInner }) =>
-        isInner
-          ? `0`
-          : `1px solid ${getColor({
-              color: COLORS.black,
-              luminosity: 80,
-            })}`};
-    }
-
-    &:nth-child(even) {
-      border-left: ${({ isInner }) =>
-        isInner
-          ? `0`
-          : `1px solid ${getColor({
-              color: COLORS.black,
-              luminosity: 80,
-            })}`};
-    }
+    width: ${({ isInner, isLarge }) =>
+      isLarge ? `100%` : isInner ? `33.33333%` : `50%`};
+    border: 0;
+    ${({ borderMediumTop }) =>
+      borderMediumTop &&
+      `border-top: 1px solid ${getColor({
+        color: COLORS.black,
+        luminosity: 80,
+      })}`};
+    ${({ borderMediumLeft }) =>
+      borderMediumLeft &&
+      `border-left: 1px solid ${getColor({
+        color: COLORS.black,
+        luminosity: 80,
+      })}`};
   `};
 
   ${media.large`
     width: ${({ isInner, isLarge }) =>
       isLarge ? `50%` : isInner ? `33.33333%` : `25%`};
-
-    &:nth-child(-n+2) {
-      padding-bottom: ${getSpacing()};
-    }
-
-    &:nth-child(n + 3) {
-      padding-top: ${({ isInner }) => (isInner ? `0` : `${getSpacing()}`)};
-      border-top: 0;
-    }
+    border: 0;
+    ${({ borderLargeLeft }) =>
+      borderLargeLeft &&
+      `border-left: 1px solid ${getColor({
+        color: COLORS.black,
+        luminosity: 80,
+      })}`};
   `};
-
-  li + & {
-    margin-top: ${getSpacing(SPACING.large)};
-    padding-top: ${getSpacing(SPACING.xl)};
-    border-top: 1px solid ${getColor({ color: COLORS.black, luminosity: 80 })};
-
-    ${media.medium`
-      margin-top: 0;
-      padding-top: ${getSpacing()};
-      border-top: 0;
-    `};
-
-    ${media.large`
-      border-left: ${({ isInner }) =>
-        isInner
-          ? `0`
-          : `1px solid ${getColor({
-              color: COLORS.black,
-              luminosity: 80,
-            })}`};
-    `};
-  }
 `;
 
 const PriceItemDescriptionSt = styled.div`
