@@ -32,6 +32,11 @@ const ContentSt = styled.div`
     `};
   }
 
+  a {
+    color: ${getColor({ color: COLORS.white })};
+    font-weight: 700;
+  }
+
   ${media.medium`
     width: calc(60% - ${getSpacing(SPACING.xl)});
 

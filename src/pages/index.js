@@ -76,11 +76,13 @@ const IndexPage = () => (
     <PromoStrip title="Ready?">
       <PromoStripContentSt>
         <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin porta
-          tempus blandit. Integer nisl erat, bibendum at aliquet vitae,
-          tristique nec tortor. Praesent non ligula non justo pulvinar blandit.
-          Suspendisse nec massa ante. Morbi sollicitudin vestibulum nibh vitae
-          maximus. Nulla ullamcorper convallis ex vitae.
+          Are you looking for <Link to="/rehearsal">Rehearsal</Link> time with
+          us?
+          <br />
+          Do you have a <Link to="/recording">Recording</Link> project we can
+          help you with?
+          <br />
+          Would you like to <Link to="/tour">see our facilities</Link>?
         </p>
       </PromoStripContentSt>
 
