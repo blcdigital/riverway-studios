@@ -11,6 +11,7 @@ Button.propTypes = {
   as: PropTypes.any,
   children: PropTypes.node.isRequired,
   level: PropTypes.string,
+  onClick: PropTypes.func,
   to: PropTypes.string,
 };
 

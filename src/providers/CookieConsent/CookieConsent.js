@@ -35,7 +35,7 @@ const ConsentProvider = ({ children }) => {
       allowedCategories,
     };
 
-    expires.setDate(expires.getDate() + 30);
+    expires.setDate(expires.getDate() + 90);
 
     cookies.set(COOKIE_NAME, cookieValue, {
       httpOnly: false,
@@ -74,7 +74,7 @@ const ConsentProvider = ({ children }) => {
         shouldShowBanner,
         shouldShowModal,
         onAccept,
-        onCustomise,
+        onCustomise: onCustomise,
       }}
     >
       <>
