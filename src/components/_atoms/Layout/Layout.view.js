@@ -11,7 +11,9 @@ const Layout = ({ children }) => {
   const { allowedCategories } = useContext(ConsentContext);
 
   return (
-    <>
+    <ConsentProvider>
+      <GlobalStyle />
+
       {allowedCategories.includes('statistics') ? (
         <>
           <script>
@@ -42,17 +44,15 @@ const Layout = ({ children }) => {
           </noscript>
         </>
       ) : null}
-      <GlobalStyle />
-      <ConsentProvider>
-        <Banner />
 
-        <Header />
+      <Banner />
 
-        <main>{children}</main>
+      <Header />
 
-        <Footer />
-      </ConsentProvider>
-    </>
+      <main>{children}</main>
+
+      <Footer />
+    </ConsentProvider>
   );
 };
 

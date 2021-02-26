@@ -8,12 +8,6 @@ import media from 'styles/media';
 const WrapperSt = styled.div`
   width: 100vw;
   background: ${getColor({ color: COLORS.boston })};
-
-  ${media.medium`
-    position: sticky;
-    top: 0;
-    z-index: 999;
-	`}
 `;
 
 const ContainerFluidSt = styled(ContainerFluid)`

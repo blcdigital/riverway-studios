@@ -23,6 +23,16 @@ const WrapperSt = styled.header`
     `}
 `;
 
+const NavigationToggleSt = styled.button`
+  ${resetButton};
+  position: relative;
+  text-transform: uppercase;
+
+  ${media.medium`
+    display: none;
+  `}
+`;
+
 const NavigationSt = styled.nav`
   position: fixed;
   top: 0;
@@ -88,17 +98,12 @@ const NavigationSt = styled.nav`
       border-bottom-color: ${getColor({ color: COLORS.boston })};
     }
   }
-`;
 
-const NavigationToggleSt = styled.button`
-  ${resetButton};
-  position: relative;
-  text-transform: uppercase;
-  z-index: 10;
-
-  ${media.medium`
-    display: none;
-  `}
+  ${NavigationToggleSt} {
+    position: absolute;
+    top: ${getSpacing(SPACING.xl)};
+    right: ${getSpacing(SPACING.large)};
+  }
 `;
 
 const SiteTitleSt = styled(Link)`

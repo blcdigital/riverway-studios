@@ -31,6 +31,10 @@ function Header({ ...rest }) {
           </NavigationToggleSt>
 
           <NavigationSt isOpen={isOpen}>
+            <NavigationToggleSt type="button" onClick={handleNavigationToggle}>
+              Close
+            </NavigationToggleSt>
+
             <Menu handleNavigationClick={handleNavigationClick} />
           </NavigationSt>
         </div>
