@@ -1,6 +1,7 @@
 import React, { useContext } from 'react';
 import PropTypes from 'prop-types';
 
+import Banner from 'components/Banner';
 import Footer from 'components/Footer';
 import Header from 'components/Header';
 import { ConsentContext, ConsentProvider } from 'providers/CookieConsent';
@@ -43,6 +44,8 @@ const Layout = ({ children }) => {
       ) : null}
       <GlobalStyle />
       <ConsentProvider>
+        <Banner />
+
         <Header />
 
         <main>{children}</main>

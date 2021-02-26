@@ -26,7 +26,9 @@ function CookieBanner() {
   return (
     <WrapperSt>
       <ContainerFluidSt>
-        <MessageSt>We use cookies to analyse our traffic.</MessageSt>
+        <MessageSt>
+          <p>We use cookies to analyse our traffic.</p>
+        </MessageSt>
         <ActionSt>
           <Button isNarrow level="clear" onClick={handleAcceptAll}>
             Accept all
