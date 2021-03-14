@@ -29,6 +29,7 @@ WrapperSt.propTypes = {
   backgroundColor: PropTypes.string,
   children: PropTypes.node.isRequired,
   image: PropTypes.string,
+  imageLeft: PropTypes.bool,
 };
 
 export default ImageText;

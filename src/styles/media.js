@@ -5,7 +5,7 @@ export const BREAKPOINTS = {
   small: 500,
   medium: 768,
   large: 920,
-  wide: 1200,
+  wide: 1064,
 };
 
 export default Object.keys(BREAKPOINTS).reduce((acc, label) => {

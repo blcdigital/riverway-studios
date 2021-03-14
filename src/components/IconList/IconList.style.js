@@ -3,28 +3,40 @@ import styled from 'styled-components';
 import { COLORS, getColor } from 'styles/color';
 import { SPACING, getSpacing } from 'styles/dimensions';
 import media from 'styles/media';
-import { getFontStyle } from 'styles/typography';
+import { WEIGHTS, getFontStyle } from 'styles/typography';
 import { resetList } from 'styles/utils';
 
 const WrapperSt = styled.section`
   padding: ${getSpacing(SPACING['2xl'])} ${getSpacing(SPACING.large)};
   background: ${getColor({ color: COLORS.mako })};
   color: ${getColor({ color: COLORS.white })};
+  text-align: center;
 
   ${media.medium`
     padding: ${getSpacing(SPACING['3xl'])} ${getSpacing(SPACING.large)};
   `};
+
+  h2 {
+    margin-bottom: ${getSpacing(SPACING['2xl'])};
+    ${getFontStyle({ size: 24, weight: WEIGHTS.bold })};
+  }
 `;
 
 const ListSt = styled.ul`
   ${resetList};
-  ${getFontStyle({ size: 16 })}
+  ${getFontStyle({ size: 14 })}
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
-  letter-spacing: 2px;
-  text-align: center;
-  text-transform: uppercase;
+  justify-content: center;
+
+  h3 {
+    ${getFontStyle({ size: 16 })};
+    line-height: 1.2;
+
+    + p {
+      margin-top: ${getSpacing(SPACING.xl)};
+    }
+  }
 
   li {
     width: calc(50% - ${getSpacing()});
@@ -34,7 +46,8 @@ const ListSt = styled.ul`
     }
 
     ${media.large`
-      width: calc(20% - ${getSpacing()});
+      padding: 0 ${getSpacing(SPACING.xl)};
+      width: ${({ itemCount }) => 100 / itemCount}%;
 
       &:nth-child(n + 3) {
         margin-top: 0;

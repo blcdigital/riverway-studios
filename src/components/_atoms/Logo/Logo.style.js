@@ -16,7 +16,7 @@ const WrapperSt = styled.span`
       height: 40px;
       overflow: hidden;
 
-      ${media.large`
+      ${media.wide`
         width: 286px;
         height: 49px;
       `};
@@ -27,7 +27,7 @@ const WrapperSt = styled.span`
         right: 0;
         height: 40px;
 
-        ${media.large`
+        ${media.wide`
           position: static;
           height: 49px;
         `};
@@ -37,7 +37,7 @@ const WrapperSt = styled.span`
       .b {
         display: none;
 
-        ${media.large`
+        ${media.wide`
           display: inline-block;
         `};
       }

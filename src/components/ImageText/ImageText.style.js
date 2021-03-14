@@ -18,7 +18,7 @@ const WrapperSt = styled.section`
   > div {
     ${media.medium`
       display: flex;
-      flex-direction: row-reverse;
+      flex-direction: ${({ imageLeft }) => (imageLeft ? 'row' : 'row-reverse')};
       align-items: flex-start;
       justify-content: space-between;
     `};

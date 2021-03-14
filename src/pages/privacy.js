@@ -5,11 +5,14 @@ import SEO from 'components/_atoms/SEO';
 import Hero from 'components/Hero';
 import SingleColumnContent from 'components/SingleColumnContent';
 
+import HeroImage from 'images/header-img-recording.png';
+import HeroImage2x from 'images/header-img-recording@2x.png';
+
 const IndexPage = () => (
   <Layout>
     <SEO title="Privacy policy" />
 
-    <Hero title="Privacy policy" />
+    <Hero image={HeroImage} image2x={HeroImage2x} title="Privacy policy" />
 
     <SingleColumnContent>
       <p>
@@ -22,13 +25,13 @@ const IndexPage = () => (
       <p>Riverway Studios 18 Stort Mill, River Way, Harlow CM20 2SN</p>
       <p>mail@riverwaystudios.co.uk</p>
       <p>
-        <strong>Effective Date:</strong> 22nd September 2019
+        <strong>Effective Date:</strong> 1st March 2021
       </p>
       <p>
         <strong>Notice Version:</strong> 1.0.0
       </p>
       <p>
-        <strong>Last Updated:</strong> 22nd September 2019
+        <strong>Last Updated:</strong> 1st March 2021
       </p>
       <h2>Your Rights</h2>
       <p>

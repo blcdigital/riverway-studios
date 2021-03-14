@@ -18,7 +18,7 @@ function Footer() {
     <WrapperSt>
       <ContaienrFluid>
         <NavigationSt>
-          <Menu />
+          <Menu isFooter />
         </NavigationSt>
 
         <ContactSt>
