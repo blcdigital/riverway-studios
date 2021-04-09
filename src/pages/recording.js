@@ -228,6 +228,12 @@ const RecordingPage = () => (
       </Pricing>
 
       <p>
+        We offer recording sessions Monday to Friday between 10am and 6pm. The
+        prices listed are for these times. Weekend recording can be available
+        with notice, at an additional fee. Please contact for more details
+      </p>
+
+      <p>
         <b>
           Got a bigger project in mind?{' '}
           <Link to="/contact-us">Get in touch</Link>.

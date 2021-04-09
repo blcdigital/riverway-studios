@@ -45,8 +45,6 @@ const Layout = ({ children }) => {
         </>
       ) : null}
 
-      <Banner />
-
       <Header />
 
       <main>{children}</main>
