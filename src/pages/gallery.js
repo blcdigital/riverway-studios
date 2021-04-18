@@ -9,7 +9,7 @@ import ImageGallery from 'components/ImageGallery';
 import HeroImage from 'images/header-img-recording.png';
 import HeroImage2x from 'images/header-img-recording@2x.png';
 
-const TourPage = ({ data }) => (
+const GalleryPage = ({ data }) => (
   <Layout>
     <SEO title="Studio tour" />
 
@@ -42,4 +42,4 @@ export const query = graphql`
   }
 `;
 
-export default TourPage;
+export default GalleryPage;

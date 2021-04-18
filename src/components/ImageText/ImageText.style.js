@@ -27,7 +27,7 @@ const WrapperSt = styled.section`
 
 const ContentSt = styled.div`
   ${media.medium`
-    width: calc(50% - ${getSpacing()});
+    width: calc(40% - ${getSpacing()});
   `};
 `;
 
@@ -41,7 +41,7 @@ const ImageSt = styled.div`
 
   ${media.medium`
     margin: 0;
-    width: calc(50% - ${getSpacing()});
+    width: calc(60% - ${getSpacing()});
   `};
 
   &::after {

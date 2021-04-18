@@ -31,7 +31,7 @@ const GlobalStyle = createGlobalStyle`
 
   h1 {
     ${media.large`
-      ${getFontStyle({ size: 60, weight: WEIGHTS.bold })};
+      ${getFontStyle({ size: 54, weight: WEIGHTS.bold })};
     `};
   }
 

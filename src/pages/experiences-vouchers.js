@@ -9,10 +9,10 @@ import IconList from 'components/IconList';
 import ImageText, { CtaSt } from 'components/ImageText';
 import Standfirst from 'components/Standfirst';
 
-import AboutUsImage from 'images/about-us-home.png';
+import VouchersExperience from 'images/vouchers-experience.png';
+import VouchersVouchers from 'images/vouchers-vouchers.png';
 import HeroImage from 'images/header-img-recording.png';
 import HeroImage2x from 'images/header-img-recording@2x.png';
-import IconLessons from 'images/icons/lessons.svg';
 import IconMixing from 'images/icons/mixing.svg';
 import IconRecording from 'images/icons/recording.svg';
 import IconRehearsal from 'images/icons/rehearsal.svg';
@@ -34,7 +34,7 @@ const VouchersPage = () => (
       </p>
     </Standfirst>
 
-    <ImageText image={AboutUsImage}>
+    <ImageText image={VouchersExperience}>
       <h2>Recording studio experience</h2>
 
       <p>
@@ -84,7 +84,7 @@ const VouchersPage = () => (
       title="How it works"
     />
 
-    <ImageText image={AboutUsImage} imageLeft>
+    <ImageText image={VouchersVouchers} imageLeft>
       <h2>Vouchers</h2>
 
       <p>

@@ -20,11 +20,11 @@ import SingleColumnContent, {
 } from 'components/SingleColumnContent';
 import TwoColumnContent, {
   ContentSt as TwoColumnSectionSt,
-  CtaSt as TwoColumnCtaSt,
 } from 'components/TwoColumnContent';
 import { COLORS, getColor } from 'styles/color';
 
-import AboutUsImage from 'images/about-us-home.png';
+import RecordingMastering from 'images/recording-mastering.png';
+import RecordingVoiceover from 'images/recording-voiceover.png';
 import HeroImage from 'images/header-img-recording.png';
 import HeroImage2x from 'images/header-img-recording@2x.png';
 import ImageStripImage from 'images/image-strip-recording.jpg';
@@ -59,12 +59,6 @@ const RecordingPage = () => (
           stage of development and ask any questions directly to the Producer.
           We promise no hard sell! Email or call for details.
         </p>
-
-        <TwoColumnCtaSt>
-          <Button as={Link} to="/contact-us">
-            Hear an example
-          </Button>
-        </TwoColumnCtaSt>
       </TwoColumnSectionSt>
 
       <TwoColumnSectionSt>Soundcloud widget</TwoColumnSectionSt>
@@ -138,7 +132,7 @@ const RecordingPage = () => (
 
     <ImageText
       backgroundColor={getColor({ color: COLORS.pebble })}
-      image={AboutUsImage}
+      image={RecordingMastering}
     >
       <h2>Mastering</h2>
 
@@ -249,7 +243,7 @@ const RecordingPage = () => (
 
     <ImageText
       backgroundColor={getColor({ color: COLORS.pebble })}
-      image={AboutUsImage}
+      image={RecordingVoiceover}
     >
       <h2>Voicover</h2>
 

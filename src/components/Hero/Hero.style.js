@@ -30,8 +30,8 @@ const WrapperSt = styled.section`
   h1 {
     margin: 0 auto;
     max-width: 900px;
+    letter-spacing: 10px;
     line-height: 1.2;
-    text-transform: none;
   }
 `;
 

@@ -10,15 +10,6 @@ function Menu({ handleNavigationClick, isFooter }) {
       <li>
         <Link
           activeClassName="is-active"
-          to="/pricing"
-          onClick={handleNavigationClick}
-        >
-          Pricing
-        </Link>
-      </li>
-      <li>
-        <Link
-          activeClassName="is-active"
           to="/recording"
           onClick={handleNavigationClick}
         >
@@ -37,6 +28,15 @@ function Menu({ handleNavigationClick, isFooter }) {
       <li>
         <Link
           activeClassName="is-active"
+          to="/gallery"
+          onClick={handleNavigationClick}
+        >
+          Gallery
+        </Link>
+      </li>
+      <li>
+        <Link
+          activeClassName="is-active"
           to="/experiences-vouchers"
           onClick={handleNavigationClick}
         >
@@ -46,10 +46,10 @@ function Menu({ handleNavigationClick, isFooter }) {
       <li>
         <Link
           activeClassName="is-active"
-          to="/tour"
+          to="/pricing"
           onClick={handleNavigationClick}
         >
-          Tour
+          Pricing
         </Link>
       </li>
       <li>

@@ -82,7 +82,7 @@ const IndexPage = () => (
           Do you have a <Link to="/recording">Recording</Link> project we can
           help you with?
           <br />
-          Would you like to <Link to="/tour">see our facilities</Link>?
+          Would you like to <Link to="/gallery">see our facilities</Link>?
         </p>
       </PromoStripContentSt>
 

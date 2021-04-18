@@ -31,7 +31,7 @@ const ListSt = styled.ul`
 
   h3 {
     ${getFontStyle({ size: 16 })};
-    line-height: 1.2;
+    line-height: 1.5;
 
     + p {
       margin-top: ${getSpacing(SPACING.xl)};
