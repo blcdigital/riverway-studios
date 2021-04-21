@@ -25,15 +25,14 @@ import { COLORS, getColor } from 'styles/color';
 
 import RecordingMastering from 'images/recording-mastering.png';
 import RecordingVoiceover from 'images/recording-voiceover.png';
-import HeroImage from 'images/header-img-recording.png';
-import HeroImage2x from 'images/header-img-recording@2x.png';
+import HeroImage from 'images/header-img-recording.jpg';
 import ImageStripImage from 'images/image-strip-recording.jpg';
 
 const RecordingPage = () => (
   <Layout>
     <SEO title="Recording" />
 
-    <Hero image={HeroImage} image2x={HeroImage2x} title="Recording" />
+    <Hero image={HeroImage} title="Recording" />
 
     <Standfirst>
       <p>

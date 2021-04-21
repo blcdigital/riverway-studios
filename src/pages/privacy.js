@@ -5,14 +5,13 @@ import SEO from 'components/_atoms/SEO';
 import Hero from 'components/Hero';
 import SingleColumnContent from 'components/SingleColumnContent';
 
-import HeroImage from 'images/header-img-recording.png';
-import HeroImage2x from 'images/header-img-recording@2x.png';
+import HeroImage from 'images/header-img-recording.jpg';
 
 const IndexPage = () => (
   <Layout>
     <SEO title="Privacy policy" />
 
-    <Hero image={HeroImage} image2x={HeroImage2x} title="Privacy policy" />
+    <Hero image={HeroImage} title="Privacy policy" />
 
     <SingleColumnContent>
       <p>

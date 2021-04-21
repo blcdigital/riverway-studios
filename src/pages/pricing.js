@@ -18,14 +18,13 @@ import SingleColumnContent, {
 } from 'components/SingleColumnContent';
 import { COLORS, getColor } from 'styles/color';
 
-import HeroImage from 'images/header-img-recording.png';
-import HeroImage2x from 'images/header-img-recording@2x.png';
+import HeroImage from 'images/header-img-pricing.jpg';
 
 const RecordingPage = () => (
   <Layout>
     <SEO title="Pricing" />
 
-    <Hero image={HeroImage} image2x={HeroImage2x} title="Pricing" />
+    <Hero image={HeroImage} title="Pricing" />
 
     <SingleColumnContent
       align="center"

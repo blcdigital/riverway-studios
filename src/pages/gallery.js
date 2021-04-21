@@ -6,14 +6,13 @@ import SEO from 'components/_atoms/SEO';
 import Hero from 'components/Hero';
 import ImageGallery from 'components/ImageGallery';
 
-import HeroImage from 'images/header-img-recording.png';
-import HeroImage2x from 'images/header-img-recording@2x.png';
+import HeroImage from 'images/header-img-gallery.jpg';
 
 const GalleryPage = ({ data }) => (
   <Layout>
     <SEO title="Studio tour" />
 
-    <Hero image={HeroImage} image2x={HeroImage2x} title="Tour" />
+    <Hero image={HeroImage} title="Tour" />
 
     <ImageGallery images={data.images} title="Studio features" />
   </Layout>

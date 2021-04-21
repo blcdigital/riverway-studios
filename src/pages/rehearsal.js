@@ -20,8 +20,7 @@ import ThreeColumnContent, {
 } from 'components/ThreeColumnContent';
 import { COLORS, getColor } from 'styles/color';
 
-import HeroImage from 'images/header-img-rehearsal.png';
-import HeroImage2x from 'images/header-img-rehearsal@2x.png';
+import HeroImage from 'images/header-img-rehearsal.jpg';
 import TourLarge from 'images/rehearsal-tour-promo-large.jpg';
 import TourSmall from 'images/rehearsal-tour-promo-small.jpg';
 
@@ -29,7 +28,7 @@ const RehearsalPage = () => (
   <Layout>
     <SEO title="Rehearsal rooms" />
 
-    <Hero image={HeroImage} image2x={HeroImage2x} title="Rehearsal rooms" />
+    <Hero image={HeroImage} title="Rehearsal rooms" />
 
     <Standfirst>
       <p>

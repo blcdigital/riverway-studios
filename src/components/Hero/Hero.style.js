@@ -21,9 +21,10 @@ const WrapperSt = styled.section`
   ${media.large`
     margin-top: -95px;
     padding-top: calc(95px + ${getSpacing(SPACING.large)});
-    background: ${getColor({ color: COLORS.pebble })} url(${({ image2x }) =>
-    image2x}) center
-    center no-repeat;
+    ${({ image2x }) =>
+      image2x &&
+      `background: ${getColor({ color: COLORS.pebble })} url(${image2x}}) center
+    center no-repeat`};
     background-size: cover;
   `};
 

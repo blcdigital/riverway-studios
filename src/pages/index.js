@@ -12,8 +12,7 @@ import PromoStrip, {
 } from 'components/PromoStrip';
 
 import AboutUsImage from 'images/about-us-home.png';
-import HeroImage from 'images/header-img-home.png';
-import HeroImage2x from 'images/header-img-home@2x.png';
+import HeroImage from 'images/header-large.jpg';
 import IconLessons from 'images/icons/lessons.svg';
 import IconMixing from 'images/icons/mixing.svg';
 import IconRecording from 'images/icons/recording.svg';
@@ -26,7 +25,6 @@ const IndexPage = () => (
     <Hero
       isExpanded
       image={HeroImage}
-      image2x={HeroImage2x}
       title="A flexible recording and rehearsal space in the heart of Essex"
     />
 

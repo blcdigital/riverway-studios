@@ -11,8 +11,7 @@ import Standfirst from 'components/Standfirst';
 
 import VouchersExperience from 'images/vouchers-experience.png';
 import VouchersVouchers from 'images/vouchers-vouchers.png';
-import HeroImage from 'images/header-img-recording.png';
-import HeroImage2x from 'images/header-img-recording@2x.png';
+import HeroImage from 'images/header-img-experiences.jpg';
 import IconMixing from 'images/icons/mixing.svg';
 import IconRecording from 'images/icons/recording.svg';
 import IconRehearsal from 'images/icons/rehearsal.svg';
@@ -21,11 +20,7 @@ const VouchersPage = () => (
   <Layout>
     <SEO title="Experiences & Vouchers" />
 
-    <Hero
-      image={HeroImage}
-      image2x={HeroImage2x}
-      title="Experiences & Vouchers"
-    />
+    <Hero image={HeroImage} title="Experiences & Vouchers" />
 
     <Standfirst>
       <p>
