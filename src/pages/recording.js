@@ -60,7 +60,17 @@ const RecordingPage = () => (
         </p>
       </TwoColumnSectionSt>
 
-      <TwoColumnSectionSt>Soundcloud widget</TwoColumnSectionSt>
+      <TwoColumnSectionSt>
+        <iframe
+          width="100%"
+          height="375"
+          scrolling="no"
+          frameborder="no"
+          allow="autoplay"
+          src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/1213553410%3Fsecret_token%3Ds-g9aLnNXcGzh&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"
+          title="Recording at Riverway Studios"
+        ></iframe>
+      </TwoColumnSectionSt>
     </TwoColumnContent>
 
     <ImageStrip smallScreenImage={ImageStripImage} />
@@ -148,11 +158,15 @@ const RecordingPage = () => (
         complexity. Mastering fees are always best discussed case by case.
       </p>
 
-      <CtaSt>
-        <Button as={Link} to="/contact-us">
-          Hear an example
-        </Button>
-      </CtaSt>
+      <iframe
+        width="100%"
+        height="250"
+        scrolling="no"
+        frameborder="no"
+        allow="autoplay"
+        src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/1245315094%3Fsecret_token%3Ds-Jzhf2tBKutf&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"
+        title="Mastering at Riverway Studios"
+      ></iframe>
     </ImageText>
 
     <SingleColumnContent
@@ -277,11 +291,15 @@ const RecordingPage = () => (
 
       <p>Please contact us via email or telephone for more information. </p>
 
-      <CtaSt>
-        <Button as={Link} to="/contact-us">
-          Hear an example
-        </Button>
-      </CtaSt>
+      <iframe
+        width="100%"
+        height="250"
+        scrolling="no"
+        frameborder="no"
+        allow="autoplay"
+        src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/1245314737%3Fsecret_token%3Ds-htLKbeEiNB4&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"
+        title="Voice overs at Riverway Studios"
+      ></iframe>
     </ImageText>
   </Layout>
 );
