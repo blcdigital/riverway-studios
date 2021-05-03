@@ -144,7 +144,7 @@ const RecordingPage = () => (
 
       <p>
         Mastering is done separately (usually within a few weeks) and our usual
-        mastering rate is between £50 and £75 per track, dependant mostly on its
+        mastering rate is between £60 and £90 per track, dependant mostly on its
         complexity. Mastering fees are always best discussed case by case.
       </p>
 
@@ -162,7 +162,9 @@ const RecordingPage = () => (
     >
       <Pricing disclaimer="1 day is 8 hours">
         <PriceItemSt isLarge>
-          <PriceItemTitleSt>By the day</PriceItemTitleSt>
+          <PriceItemTitleSt>
+            By the day <span>(Mon - Fri)</span>
+          </PriceItemTitleSt>
 
           <PriceItemList>
             <PriceItemSt isInner>
@@ -244,28 +246,36 @@ const RecordingPage = () => (
       backgroundColor={getColor({ color: COLORS.pebble })}
       image={RecordingVoiceover}
     >
-      <h2>Voicover</h2>
+      <h2>Voice over</h2>
 
       <p>
-        Click above to hear about our voice over service, and sample the quality
-        of our vocal recording first hand! (Decent speakers or headphones
-        recommended, naturally!).
+        Here at Riverway Studios, we offer high quality Voice recording at a
+        very reasonable price.
       </p>
 
       <p>
-        Here at Riverway Studios we offer high quality voice-over recording at a
-        very reasonable price. Whether you need voice recording for radio,
-        video, a corporate show reel, or any other requirement, we are well
-        suited for your needs. Our vocal recording booth is acoustically
-        engineered for clear voice reproduction, and our in house Neumann
-        Microphone ensures a clear, natural sound. Our editing suite will tidy
-        up and process your audio in no time, and we can export to both full
-        quality wav files and pre-compressed mp3 files, or both, dependant on
-        your individual needs. As well as straightforward vocal reproduction, we
-        can also mix music into the background, include sound effects and even
-        process your voice in some very interesting ways. Please contact us via
-        email or telephone for more information.
+        Whether you need voice recording for personal or business needs, we can
+        help. Private, personal and corporate clients are all welcome.
       </p>
+
+      <p>
+        Our vocal recording booth is acoustically engineered for clear voice
+        reproduction. Our high quality microphones are designed to carefully and
+        precisely record your VO.
+      </p>
+
+      <p>
+        Our editing suite will tidy up and process your audio in no time. We can
+        export and deliver your files to your individual needs.
+      </p>
+
+      <p>
+        As well as straightforward, clear voice reproduction, we can mix music
+        or other sounds into your project. We can also process your voice in
+        some very interesting ways, using a selection of vocal sound effects.
+      </p>
+
+      <p>Please contact us via email or telephone for more information. </p>
 
       <CtaSt>
         <Button as={Link} to="/contact-us">

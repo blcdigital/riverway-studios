@@ -83,11 +83,11 @@ const RehearsalPage = () => (
         <h4>Full PA system</h4>
 
         <h4>Mics</h4>
-        <p>2 x Shure SM58 Microphones, inc. leads and stands.</p>
+        <p>3 x Shure SM58 Microphones, inc. leads and stands.</p>
 
         <h4>Mixer</h4>
         <p>
-          8-Channel Mackie Mini Mixer (2 house mic inputs + 6 additional inputs
+          8-Channel Mackie Mini Mixer (3 house mic inputs + 5 additional inputs
           for mics/DI instruments).
         </p>
 
@@ -166,6 +166,7 @@ const RehearsalPage = () => (
 
           <PriceItemDurationSt>
             <b>for a 4 hour session</b>
+            <span>£11 per additional hour</span>
           </PriceItemDurationSt>
 
           <PriceItemDescriptionSt>
@@ -203,6 +204,7 @@ const RehearsalPage = () => (
 
           <PriceItemDurationSt>
             <b>for a 2 hour session</b>
+            <span>£11 per additional hour</span>
           </PriceItemDurationSt>
 
           <PriceItemDescriptionSt>

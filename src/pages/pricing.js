@@ -33,7 +33,9 @@ const RecordingPage = () => (
     >
       <Pricing disclaimer="1 day is 8 hours">
         <PriceItemSt isLarge>
-          <PriceItemTitleSt>By the day</PriceItemTitleSt>
+          <PriceItemTitleSt>
+            By the day <span>(Mon - Fri)</span>
+          </PriceItemTitleSt>
 
           <PriceItemList>
             <PriceItemSt isInner>
@@ -149,6 +151,7 @@ const RecordingPage = () => (
 
           <PriceItemDurationSt>
             <b>for a 4 hour session</b>
+            <span>£11 per additional hour</span>
           </PriceItemDurationSt>
 
           <PriceItemDescriptionSt>
@@ -191,6 +194,7 @@ const RecordingPage = () => (
 
           <PriceItemDurationSt>
             <b>for a 2 hour session</b>
+            <span>£11 per additional hour</span>
           </PriceItemDurationSt>
 
           <PriceItemDescriptionSt>

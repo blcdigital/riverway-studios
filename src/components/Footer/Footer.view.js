@@ -37,7 +37,7 @@ function Footer() {
               </Link>
             </SiteTitleSt>
 
-            <CopyrightSt>&copy; 2020 Riverway Studios</CopyrightSt>
+            <CopyrightSt>&copy; 2021 Riverway Studios</CopyrightSt>
           </div>
         </ContactSt>
       </ContaienrFluid>
