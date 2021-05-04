@@ -20,7 +20,7 @@ import IconRehearsal from 'images/icons/rehearsal.svg';
 
 const IndexPage = () => (
   <Layout>
-    <SEO title="Home" />
+    <SEO />
 
     <Hero
       isExpanded

@@ -10,6 +10,8 @@ import PropTypes from 'prop-types';
 import Helmet from 'react-helmet';
 import { useStaticQuery, graphql } from 'gatsby';
 
+import HeroImage from 'images/header-large.jpg';
+
 function SEO({ description, lang, meta, title }) {
   const { site } = useStaticQuery(
     graphql`
@@ -38,8 +40,11 @@ function SEO({ description, lang, meta, title }) {
           rel: `stylesheet`,
         },
       ]}
-      title={title}
-      titleTemplate={`%s | ${site.siteMetadata.title}`}
+      title={
+        title
+          ? `${title} | ${site.siteMetadata.title}`
+          : site.siteMetadata.title
+      }
       meta={[
         {
           name: `viewport`,
@@ -51,11 +56,17 @@ function SEO({ description, lang, meta, title }) {
         },
         {
           property: `og:title`,
-          content: title,
+          content: title
+            ? `${title} | ${site.siteMetadata.title}`
+            : site.siteMetadata.title,
         },
         {
           property: `og:description`,
           content: metaDescription,
+        },
+        {
+          property: `og:image`,
+          content: HeroImage,
         },
         {
           property: `og:type`,
@@ -71,7 +82,9 @@ function SEO({ description, lang, meta, title }) {
         },
         {
           name: `twitter:title`,
-          content: title,
+          content: title
+            ? `${title} | ${site.siteMetadata.title}`
+            : site.siteMetadata.title,
         },
         {
           name: `twitter:description`,
@@ -92,7 +105,7 @@ SEO.propTypes = {
   description: PropTypes.string,
   lang: PropTypes.string,
   meta: PropTypes.arrayOf(PropTypes.object),
-  title: PropTypes.string.isRequired,
+  title: PropTypes.string,
 };
 
 export default SEO;
