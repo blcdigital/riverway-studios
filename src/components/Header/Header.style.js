@@ -28,7 +28,7 @@ const NavigationToggleSt = styled.button`
   position: relative;
   text-transform: uppercase;
 
-  ${media.medium`
+  ${media.large`
     display: none;
   `}
 `;
@@ -52,7 +52,7 @@ const NavigationSt = styled.nav`
     transform: translateX(0);
   `};
 
-  ${media.medium`
+  ${media.large`
     position: static;
     padding: 0;
     width: auto;
@@ -67,14 +67,14 @@ const NavigationSt = styled.nav`
   }
 
   li {
-    ${media.medium`
+    ${media.large`
       display: inline-block;
     `}
 
     + li {
       margin-top: ${getSpacing(SPACING.xl)};
 
-      ${media.medium`
+      ${media.large`
         margin-top: 0;
         margin-left: ${getSpacing(SPACING.xl)};
       `}

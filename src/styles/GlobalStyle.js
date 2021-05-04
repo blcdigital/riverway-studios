@@ -27,6 +27,7 @@ const GlobalStyle = createGlobalStyle`
     letter-spacing: 3px;
     line-height: 1;
     text-transform: uppercase;
+    word-wrap: break-word;
   }
 
   h1 {

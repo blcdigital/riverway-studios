@@ -39,10 +39,11 @@ const ListSt = styled.ul`
   }
 
   li {
-    width: calc(50% - ${getSpacing()});
+    padding: 0 ${getSpacing(SPACING.large)};
+    width: 50%;
 
     &:nth-child(n + 3) {
-      margin-top: ${getSpacing(SPACING.xl)};
+      margin-top: ${getSpacing(SPACING['2xl'])};
     }
 
     ${media.large`

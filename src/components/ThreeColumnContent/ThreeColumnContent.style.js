@@ -5,13 +5,9 @@ import media from 'styles/media';
 import { COLORS, getColor } from 'styles/color';
 
 const WrapperSt = styled.section`
-  padding: ${getSpacing(SPACING.xl)} ${getSpacing(SPACING.large)};
+  padding: ${getSpacing(SPACING['2xl'])} ${getSpacing(SPACING.large)};
   background: ${({ backgroundColor }) =>
     backgroundColor || getColor({ color: COLORS.white })};
-
-  ${media.medium`
-    padding: ${getSpacing(SPACING['2xl'])} ${getSpacing(SPACING.large)};
-  `};
 
   > div {
     ${media.medium`
