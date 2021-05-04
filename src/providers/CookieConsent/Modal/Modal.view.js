@@ -70,7 +70,7 @@ function CookieModal() {
           <Link to="/privacy">Privacy Policy</Link>. You can also find more
           detailed information on what cookies are in each category and update
           your consent in the future at our{' '}
-          <Link to="/cookie-information">Cookie Information page</Link>.
+          <Link to="/cookie-information">Cookie Info page</Link>.
         </p>
 
         <form onSubmit={handleSubmit}>

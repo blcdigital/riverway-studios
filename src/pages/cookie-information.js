@@ -10,9 +10,9 @@ import HeroImage from 'images/header-img-recording.jpg';
 const IndexPage = () => {
   return (
     <Layout>
-      <SEO title="Cookie information" />
+      <SEO title="Cookie info" />
 
-      <Hero image={HeroImage} title="Cookie information" />
+      <Hero image={HeroImage} title="Cookie info" />
 
       <CookieInformation />
     </Layout>

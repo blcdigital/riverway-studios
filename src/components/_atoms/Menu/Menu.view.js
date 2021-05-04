@@ -76,7 +76,7 @@ function Menu({ handleNavigationClick, isFooter }) {
               to="/cookie-information"
               onClick={handleNavigationClick}
             >
-              Cookie information
+              Cookie info
             </Link>
           </li>
         </>
