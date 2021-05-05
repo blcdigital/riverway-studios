@@ -6,7 +6,7 @@ import Layout from 'components/_atoms/Layout';
 import SEO from 'components/_atoms/SEO';
 import Hero from 'components/Hero';
 import ImageStrip from 'components/ImageStrip';
-import ImageText, { CtaSt } from 'components/ImageText';
+import ImageText from 'components/ImageText';
 import Pricing, {
   PriceItemList,
   PriceItemSt,
