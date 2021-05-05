@@ -9,6 +9,8 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import Helmet from 'react-helmet';
 import { useStaticQuery, graphql } from 'gatsby';
+
+import HeroImage from 'images/header-large.jpg';
 function SEO({ description, lang, meta, title }) {
   const { site } = useStaticQuery(
     graphql`
@@ -63,7 +65,7 @@ function SEO({ description, lang, meta, title }) {
         },
         {
           property: `og:image`,
-          content: 'https://riverwaystudios.co.uk/images/og-image.jpg',
+          content: `https://riverwaystudios.co.uk${HeroImage}`,
         },
         {
           property: `og:type`,
