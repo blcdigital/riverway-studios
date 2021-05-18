@@ -3,6 +3,7 @@ module.exports = {
     title: `Riverway Studios`,
     description: `Recording and rehearsal studio in Harlow, Essex`,
     author: `@riverwaystudios`,
+    siteUrl: `https://riverwaystudios.co.uk/`,
   },
   plugins: [
     `gatsby-plugin-resolve-src`,
@@ -33,5 +34,6 @@ module.exports = {
     // To learn more, visit: https://gatsby.dev/offline
     // `gatsby-plugin-offline`,
     `gatsby-plugin-netlify`,
+    `gatsby-plugin-sitemap`,
   ],
 };
