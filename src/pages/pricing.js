@@ -199,6 +199,11 @@ const RecordingPage = () => (
 
           <PriceItemDescriptionSt>
             <p>
+              Solo rehearsals are available Monday to Friday between 10am and
+              6pm.
+            </p>
+
+            <p>
               <b>For solo musicians only.</b>
             </p>
 
@@ -207,11 +212,6 @@ const RecordingPage = () => (
               your instrument at volume without upsetting the neighbours! As
               usual, our house drum kit is included (minus brassware) so
               drummers in particular can make the most of this!
-            </p>
-
-            <p>
-              Solo rehearsals are available Monday to Friday between 10am and
-              6pm.
             </p>
           </PriceItemDescriptionSt>
         </PriceItemSt>
