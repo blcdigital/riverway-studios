@@ -218,6 +218,11 @@ const RehearsalPage = () => (
               usual, our house drum kit is included (minus brassware) so
               drummers in particular can make the most of this!
             </p>
+
+            <p>
+              Solo rehearsals are available Monday to Friday between 10am and
+              6pm.
+            </p>
           </PriceItemDescriptionSt>
         </PriceItemSt>
       </Pricing>
