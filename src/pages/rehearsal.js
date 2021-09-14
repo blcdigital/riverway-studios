@@ -209,6 +209,11 @@ const RehearsalPage = () => (
 
           <PriceItemDescriptionSt>
             <p>
+              Solo rehearsals are available Monday to Friday between 10am and
+              6pm.
+            </p>
+
+            <p>
               <b>For solo musicians only.</b>
             </p>
 
