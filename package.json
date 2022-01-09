@@ -4,9 +4,6 @@
   "version": "0.1.0",
   "author": "Jasal Vadgama <jasal@blacklabelcreative.com>",
   "private": true,
-  "engines": {
-    "node": ">=16"
-  },
   "scripts": {
     "postinstall": "yarn prepare",
     "prepare": "husky install",
