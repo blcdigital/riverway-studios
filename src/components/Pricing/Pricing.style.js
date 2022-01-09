@@ -95,6 +95,7 @@ const PriceItemSt = styled.li`
   ${media.medium`
     width: ${({ isInner, isLarge }) =>
       isLarge ? `100%` : isInner ? `33.33333%` : `50%`};
+    ${({ isDoubleColumn }) => isDoubleColumn && `width: 66.66666%`};
     border: 0;
     ${({ borderMediumTop }) =>
       borderMediumTop &&
@@ -113,6 +114,7 @@ const PriceItemSt = styled.li`
   ${media.large`
     width: ${({ isInner, isLarge }) =>
       isLarge ? `50%` : isInner ? `33.33333%` : `25%`};
+    ${({ isDoubleColumn }) => isDoubleColumn && `width: 66.66666%`};
     border: 0;
     ${({ borderLargeLeft }) =>
       borderLargeLeft &&
@@ -151,6 +153,12 @@ const PriceItemTitleSt = styled.h3`
 const PriceItemValueSt = styled.p`
   ${getFontStyle({ size: 40, weight: WEIGHTS.bold })};
   margin-bottom: ${getSpacing()};
+
+  span {
+    display: block;
+    color: #ff0000;
+    font-size: 1rem;
+  }
 `;
 
 export {

@@ -39,26 +39,23 @@ const RecordingPage = () => (
 
           <PriceItemList>
             <PriceItemSt isInner>
-              <PriceItemValueSt>£195</PriceItemValueSt>
+              <PriceItemValueSt>
+                £195
+                <span>£215 from 1st March 2022</span>
+              </PriceItemValueSt>
 
               <PriceItemDurationSt>
                 <b>1 day session</b>
               </PriceItemDurationSt>
             </PriceItemSt>
 
-            <PriceItemSt isInner>
-              <PriceItemValueSt>£380</PriceItemValueSt>
+            <PriceItemSt isInner isDoubleColumn>
+              <PriceItemValueSt>£POA</PriceItemValueSt>
 
               <PriceItemDurationSt>
-                <b>2 day session</b>
-              </PriceItemDurationSt>
-            </PriceItemSt>
-
-            <PriceItemSt isInner>
-              <PriceItemValueSt>£555</PriceItemValueSt>
-
-              <PriceItemDurationSt>
-                <b>3 day session</b>
+                <b>
+                  Projects longer than one day discussed on an individual basis
+                </b>
               </PriceItemDurationSt>
             </PriceItemSt>
           </PriceItemList>
@@ -67,7 +64,10 @@ const RecordingPage = () => (
         <PriceItemSt borderSmallTop borderMediumTop borderLargeLeft>
           <PriceItemTitleSt>By the hour</PriceItemTitleSt>
 
-          <PriceItemValueSt>£30</PriceItemValueSt>
+          <PriceItemValueSt>
+            £30
+            <span>£33 from 1st March 2022</span>
+          </PriceItemValueSt>
 
           <PriceItemDurationSt>
             <b>
@@ -122,7 +122,10 @@ const RecordingPage = () => (
         <PriceItemSt>
           <PriceItemTitleSt>Peak time</PriceItemTitleSt>
 
-          <PriceItemValueSt>£48</PriceItemValueSt>
+          <PriceItemValueSt>
+            £48
+            <span>£50 from 1st March 2022</span>
+          </PriceItemValueSt>
 
           <PriceItemDurationSt>
             <b>for a 4 hour session</b>
@@ -147,7 +150,10 @@ const RecordingPage = () => (
         <PriceItemSt borderSmallTop borderMediumLeft borderLargeLeft>
           <PriceItemTitleSt>Off-peak</PriceItemTitleSt>
 
-          <PriceItemValueSt>£44</PriceItemValueSt>
+          <PriceItemValueSt>
+            £44
+            <span>£46 from 1st March 2022</span>
+          </PriceItemValueSt>
 
           <PriceItemDurationSt>
             <b>for a 4 hour session</b>
@@ -165,7 +171,10 @@ const RecordingPage = () => (
         <PriceItemSt borderSmallTop borderMediumTop borderLargeLeft>
           <PriceItemTitleSt>Nighthawk session</PriceItemTitleSt>
 
-          <PriceItemValueSt>£40</PriceItemValueSt>
+          <PriceItemValueSt>
+            £40
+            <span>£44 from 1st March 2022</span>
+          </PriceItemValueSt>
 
           <PriceItemDurationSt>
             <b>for a 4 hour session</b>
