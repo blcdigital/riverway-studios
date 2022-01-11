@@ -137,7 +137,10 @@ const RehearsalPage = () => (
         <PriceItemSt>
           <PriceItemTitleSt>Peak time</PriceItemTitleSt>
 
-          <PriceItemValueSt>£48</PriceItemValueSt>
+          <PriceItemValueSt>
+            £48
+            <span>£50 from 1st March 2022</span>
+          </PriceItemValueSt>
 
           <PriceItemDurationSt>
             <b>for a 4 hour session</b>
@@ -159,10 +162,13 @@ const RehearsalPage = () => (
           </PriceItemDescriptionSt>
         </PriceItemSt>
 
-        <PriceItemSt>
+        <PriceItemSt borderSmallTop borderMediumLeft borderLargeLeft>
           <PriceItemTitleSt>Off-peak</PriceItemTitleSt>
 
-          <PriceItemValueSt>£44</PriceItemValueSt>
+          <PriceItemValueSt>
+            £44
+            <span>£46 from 1st March 2022</span>
+          </PriceItemValueSt>
 
           <PriceItemDurationSt>
             <b>for a 4 hour session</b>
@@ -177,10 +183,13 @@ const RehearsalPage = () => (
           </PriceItemDescriptionSt>
         </PriceItemSt>
 
-        <PriceItemSt>
+        <PriceItemSt borderSmallTop borderMediumTop borderLargeLeft>
           <PriceItemTitleSt>Nighthawk session</PriceItemTitleSt>
 
-          <PriceItemValueSt>£40</PriceItemValueSt>
+          <PriceItemValueSt>
+            £40
+            <span>£44 from 1st March 2022</span>
+          </PriceItemValueSt>
 
           <PriceItemDurationSt>
             <b>for a 4 hour session</b>
@@ -195,12 +204,20 @@ const RehearsalPage = () => (
           </PriceItemDescriptionSt>
         </PriceItemSt>
 
-        <PriceItemSt>
+        <PriceItemSt
+          borderSmallTop
+          borderMediumLeft
+          borderMediumTop
+          borderLargeLeft
+        >
           <PriceItemTitleSt>
             Solo <span>(off-peak only)</span>
           </PriceItemTitleSt>
 
-          <PriceItemValueSt>£22</PriceItemValueSt>
+          <PriceItemValueSt>
+            £22
+            <span>£24 from 1st March 2022</span>
+          </PriceItemValueSt>
 
           <PriceItemDurationSt>
             <b>for a 2 hour session</b>
