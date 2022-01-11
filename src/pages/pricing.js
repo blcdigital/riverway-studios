@@ -192,7 +192,10 @@ const RecordingPage = () => (
             Solo <span>(off-peak only)</span>
           </PriceItemTitleSt>
 
-          <PriceItemValueSt>£22</PriceItemValueSt>
+          <PriceItemValueSt>
+            £22
+            <span>£24 from 1st March 2022</span>
+          </PriceItemValueSt>
 
           <PriceItemDurationSt>
             <b>for a 2 hour session</b>

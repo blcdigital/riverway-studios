@@ -162,7 +162,7 @@ const RehearsalPage = () => (
           </PriceItemDescriptionSt>
         </PriceItemSt>
 
-        <PriceItemSt>
+        <PriceItemSt borderSmallTop borderMediumLeft borderLargeLeft>
           <PriceItemTitleSt>Off-peak</PriceItemTitleSt>
 
           <PriceItemValueSt>
@@ -183,7 +183,7 @@ const RehearsalPage = () => (
           </PriceItemDescriptionSt>
         </PriceItemSt>
 
-        <PriceItemSt>
+        <PriceItemSt borderSmallTop borderMediumTop borderLargeLeft>
           <PriceItemTitleSt>Nighthawk session</PriceItemTitleSt>
 
           <PriceItemValueSt>
@@ -204,12 +204,20 @@ const RehearsalPage = () => (
           </PriceItemDescriptionSt>
         </PriceItemSt>
 
-        <PriceItemSt>
+        <PriceItemSt
+          borderSmallTop
+          borderMediumLeft
+          borderMediumTop
+          borderLargeLeft
+        >
           <PriceItemTitleSt>
             Solo <span>(off-peak only)</span>
           </PriceItemTitleSt>
 
-          <PriceItemValueSt>£22</PriceItemValueSt>
+          <PriceItemValueSt>
+            £22
+            <span>£24 from 1st March 2022</span>
+          </PriceItemValueSt>
 
           <PriceItemDurationSt>
             <b>for a 2 hour session</b>
