@@ -181,7 +181,7 @@ const RecordingPage = () => (
           </PriceItemTitleSt>
 
           <PriceItemList>
-            <PriceItemSt isInner>
+            <PriceItemSt isInner isDoubleColumn>
               <PriceItemValueSt>
                 £195
                 <span>£215 from 1st March 2022</span>
@@ -189,16 +189,9 @@ const RecordingPage = () => (
 
               <PriceItemDurationSt>
                 <b>1 day session</b>
-              </PriceItemDurationSt>
-            </PriceItemSt>
-
-            <PriceItemSt isInner isDoubleColumn>
-              <PriceItemValueSt>£POA</PriceItemValueSt>
-
-              <PriceItemDurationSt>
-                <b>
+                <span>
                   Projects longer than one day discussed on an individual basis
-                </b>
+                </span>
               </PriceItemDurationSt>
             </PriceItemSt>
           </PriceItemList>

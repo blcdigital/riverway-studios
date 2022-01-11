@@ -95,7 +95,7 @@ const PriceItemSt = styled.li`
   ${media.medium`
     width: ${({ isInner, isLarge }) =>
       isLarge ? `100%` : isInner ? `33.33333%` : `50%`};
-    ${({ isDoubleColumn }) => isDoubleColumn && `width: 66.66666%`};
+    ${({ isDoubleColumn }) => isDoubleColumn && `width: 100%`};
     border: 0;
     ${({ borderMediumTop }) =>
       borderMediumTop &&
@@ -114,7 +114,7 @@ const PriceItemSt = styled.li`
   ${media.large`
     width: ${({ isInner, isLarge }) =>
       isLarge ? `50%` : isInner ? `33.33333%` : `25%`};
-    ${({ isDoubleColumn }) => isDoubleColumn && `width: 66.66666%`};
+    ${({ isDoubleColumn }) => isDoubleColumn && `width: 100%`};
     border: 0;
     ${({ borderLargeLeft }) =>
       borderLargeLeft &&
