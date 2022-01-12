@@ -6,7 +6,6 @@ import Layout from 'components/_atoms/Layout';
 import SEO from 'components/_atoms/SEO';
 import Hero from 'components/Hero';
 import Pricing, {
-  PriceItemList,
   PriceItemDescriptionSt,
   PriceItemSt,
   PriceItemDurationSt,
@@ -37,21 +36,17 @@ const RecordingPage = () => (
             By the day <span>(Mon - Fri)</span>
           </PriceItemTitleSt>
 
-          <PriceItemList>
-            <PriceItemSt isInner isDoubleColumn>
-              <PriceItemValueSt>
-                £195
-                <span>£215 from 1st March 2022</span>
-              </PriceItemValueSt>
+          <PriceItemValueSt>
+            £195
+            <span>£215 from 1st March 2022</span>
+          </PriceItemValueSt>
 
-              <PriceItemDurationSt>
-                <b>1 day session</b>
-                <span>
-                  Projects longer than one day discussed on an individual basis
-                </span>
-              </PriceItemDurationSt>
-            </PriceItemSt>
-          </PriceItemList>
+          <PriceItemDurationSt>
+            <b>1 day session</b>
+            <span>
+              Projects longer than one day discussed on an individual basis
+            </span>
+          </PriceItemDurationSt>
         </PriceItemSt>
 
         <PriceItemSt borderSmallTop borderMediumTop borderLargeLeft>
