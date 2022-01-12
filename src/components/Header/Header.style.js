@@ -26,6 +26,7 @@ const WrapperSt = styled.header`
 const NavigationToggleSt = styled.button`
   ${resetButton};
   position: relative;
+  color: inherit;
   text-transform: uppercase;
 
   ${media.large`
