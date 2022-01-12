@@ -23,7 +23,7 @@ const GlobalStyle = createGlobalStyle`
 
   h1, h2 {
     margin-top: 0;
-    ${getFontStyle({ size: 40, weight: WEIGHTS.bold })};
+    ${getFontStyle({ size: 32, weight: WEIGHTS.bold })};
     letter-spacing: 3px;
     line-height: 1;
     text-transform: uppercase;
