@@ -1,14 +1,14 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-import ContaienrFluid from 'components/_atoms/ContainerFluid';
+import ContainerFluid from 'components/_atoms/ContainerFluid';
 
 import { WrapperSt, ContentSt, ImageSt, TitleSt } from './ImageText.style';
 
 function ImageText({ children, image, title, ...rest }) {
   return (
     <WrapperSt {...rest}>
-      <ContaienrFluid>
+      <ContainerFluid>
         {image && (
           <ImageSt>
             {' '}
@@ -20,7 +20,7 @@ function ImageText({ children, image, title, ...rest }) {
 
           {children}
         </ContentSt>
-      </ContaienrFluid>
+      </ContainerFluid>
     </WrapperSt>
   );
 }

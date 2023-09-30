@@ -2,7 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import Gallery from '@browniebroke/gatsby-image-gallery';
 
-import ContaienrFluid from 'components/_atoms/ContainerFluid';
+import ContainerFluid from 'components/_atoms/ContainerFluid';
 
 import { WrapperSt, TitleSt } from './ImageGallery.style';
 
@@ -22,11 +22,11 @@ function ImageGallery({ images, title, ...rest }) {
 
   return (
     <WrapperSt>
-      <ContaienrFluid>
+      <ContainerFluid>
         {title && <TitleSt>{title}</TitleSt>}
 
         <Gallery images={imagesWithCaption} lightboxOptions={lightboxOptions} />
-      </ContaienrFluid>
+      </ContainerFluid>
     </WrapperSt>
   );
 }

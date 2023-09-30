@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'gatsby';
 
-import ContaienrFluid from 'components/_atoms/ContainerFluid';
+import ContainerFluid from 'components/_atoms/ContainerFluid';
 import Logo from 'components/_atoms/Logo';
 import Menu from 'components/_atoms/Menu';
 
@@ -16,7 +16,7 @@ import {
 function Footer() {
   return (
     <WrapperSt>
-      <ContaienrFluid>
+      <ContainerFluid>
         <NavigationSt>
           <Menu isFooter />
         </NavigationSt>
@@ -40,7 +40,7 @@ function Footer() {
             <CopyrightSt>&copy; 2021 Riverway Studios</CopyrightSt>
           </div>
         </ContactSt>
-      </ContaienrFluid>
+      </ContainerFluid>
     </WrapperSt>
   );
 }

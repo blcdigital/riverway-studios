@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 
-import ContaienrFluid from 'components/_atoms/ContainerFluid';
+import ContainerFluid from 'components/_atoms/ContainerFluid';
 import Logo from 'components/_atoms/Logo';
 import Menu from 'components/_atoms/Menu';
 
@@ -20,7 +20,7 @@ function Header({ ...rest }) {
 
   return (
     <WrapperSt {...rest}>
-      <ContaienrFluid>
+      <ContainerFluid>
         <SiteTitleSt to="/">
           <Logo isSiteTitle />
         </SiteTitleSt>
@@ -38,7 +38,7 @@ function Header({ ...rest }) {
             <Menu handleNavigationClick={handleNavigationClick} />
           </NavigationSt>
         </div>
-      </ContaienrFluid>
+      </ContainerFluid>
     </WrapperSt>
   );
 }
