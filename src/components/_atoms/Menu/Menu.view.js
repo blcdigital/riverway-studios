@@ -64,15 +64,6 @@ function Menu({ handleNavigationClick, isFooter }) {
           <li>
             <Link
               activeClassName="is-active"
-              to="/house-rules"
-              onClick={handleNavigationClick}
-            >
-              House rules
-            </Link>
-          </li>
-          <li>
-            <Link
-              activeClassName="is-active"
               to="/privacy"
               onClick={handleNavigationClick}
             >
