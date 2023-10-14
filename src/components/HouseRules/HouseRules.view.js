@@ -8,8 +8,9 @@ function HouseRules() {
       <TitleSt>Cancellations</TitleSt>
       <ItemSt>
         All cancellations require 48 hours’ notice minimum, by text or phone
-        call, from the person who made the booking. Rescheduling is counted as
-        cancelling and rebooking, and as such is chargeable in full.
+        call, from the person who made the booking. Full charge applies
+        otherwise, without exception. Rescheduling is counted as cancelling and
+        rebooking, and as such is chargeable.
       </ItemSt>
 
       <TitleSt>Contact</TitleSt>
