@@ -179,7 +179,7 @@ const RecordingPage = () => (
             By the day <span>(Mon - Fri)</span>
           </PriceItemTitleSt>
 
-          <PriceItemValueSt>£215</PriceItemValueSt>
+          <PriceItemValueSt>£250</PriceItemValueSt>
 
           <PriceItemDurationSt>
             <b>1 day session</b>
@@ -192,7 +192,7 @@ const RecordingPage = () => (
         <PriceItemSt borderSmallTop borderMediumTop borderLargeLeft>
           <PriceItemTitleSt>By the hour</PriceItemTitleSt>
 
-          <PriceItemValueSt>£33</PriceItemValueSt>
+          <PriceItemValueSt>£36</PriceItemValueSt>
 
           <PriceItemDurationSt>
             <b>
@@ -210,7 +210,7 @@ const RecordingPage = () => (
         >
           <PriceItemTitleSt>Mastering</PriceItemTitleSt>
 
-          <PriceItemValueSt>£60 - 90</PriceItemValueSt>
+          <PriceItemValueSt>£65 - 95</PriceItemValueSt>
 
           <PriceItemDurationSt>
             <b>per track</b>
