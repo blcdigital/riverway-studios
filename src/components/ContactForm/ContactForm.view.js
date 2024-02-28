@@ -39,25 +39,23 @@ function ContactForm() {
       if (res.status === 200) {
         setHasSent({
           status: 200,
-          msg: "Thanks, we'll be in touch soon.",
+          msg:
+            '<p><b>Thank you for your message. We will get back to you soon, usually within 24 hours.</b></p><p><b>Please note - If your email is time sensitive, for instance a rehearsal request at short notice, please call or text 07760 160638.</b></p>',
         });
         actions.setSubmitting(false);
         return;
       }
       setHasSent({
         status: 500,
-        msg: 'There was an error. Please contact mail@riverwaystudios.co.uk.',
+        msg:
+          '<p><b>There was an error. Please contact mail@riverwaystudios.co.uk.</b></p>',
       });
       actions.setSubmitting(false);
     });
   };
 
   if (hasSent.status === 200) {
-    return (
-      <p>
-        <b>{hasSent.msg}</b>
-      </p>
-    );
+    return <div dangerouslySetInnerHTML={{ __html: hasSent.msg }} />;
   }
 
   return (
