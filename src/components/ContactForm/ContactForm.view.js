@@ -26,7 +26,7 @@ function ContactForm() {
   const handleSubmit = (values, actions) => {
     fetch('https://formspree.io/mnqgrnyz', {
       body: JSON.stringify({
-        _replyto: 'no-reply@riverwaystudios.co.uk',
+        _replyto: values.email_address,
         _subject: `Contact form submission`,
         message: buildEmail(values),
       }),
