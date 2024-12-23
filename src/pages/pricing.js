@@ -101,10 +101,15 @@ const RecordingPage = () => (
       title="Rehearsal"
     >
       <Pricing showBookButton showOpeningTimes>
-        <PriceItemSt>
+        <PriceItemSt isThreeCol>
           <PriceItemTitleSt>Peak time</PriceItemTitleSt>
 
-          <PriceItemValueSt>£50</PriceItemValueSt>
+          <PriceItemValueSt>
+            £50{' '}
+            <span>
+              £55 from 1<sup>st</sup> March 2025
+            </span>
+          </PriceItemValueSt>
 
           <PriceItemDurationSt>
             <b>for a 4 hour session</b>
@@ -126,10 +131,15 @@ const RecordingPage = () => (
           </PriceItemDescriptionSt>
         </PriceItemSt>
 
-        <PriceItemSt borderSmallTop borderMediumLeft borderLargeLeft>
+        <PriceItemSt borderSmallTop borderMediumLeft borderLargeLeft isThreeCol>
           <PriceItemTitleSt>Off-peak</PriceItemTitleSt>
 
-          <PriceItemValueSt>£46</PriceItemValueSt>
+          <PriceItemValueSt>
+            £46{' '}
+            <span>
+              £50 from 1<sup>st</sup> March 2025
+            </span>
+          </PriceItemValueSt>
 
           <PriceItemDurationSt>
             <b>for a 4 hour session</b>
@@ -144,35 +154,17 @@ const RecordingPage = () => (
           </PriceItemDescriptionSt>
         </PriceItemSt>
 
-        <PriceItemSt borderSmallTop borderMediumTop borderLargeLeft>
-          <PriceItemTitleSt>Nighthawk session</PriceItemTitleSt>
-
-          <PriceItemValueSt>£44</PriceItemValueSt>
-
-          <PriceItemDurationSt>
-            <b>for a 4 hour session</b>
-          </PriceItemDurationSt>
-
-          <PriceItemDescriptionSt>
-            <p>
-              Nighthawk rehearsals are booked for 11pm-3am, 7 days a week, and
-              are an exclusive offer for existing clients only. Not available to
-              debut bookings.
-            </p>
-          </PriceItemDescriptionSt>
-        </PriceItemSt>
-
-        <PriceItemSt
-          borderSmallTop
-          borderMediumLeft
-          borderMediumTop
-          borderLargeLeft
-        >
+        <PriceItemSt borderSmallTop borderMediumLeft borderLargeLeft isThreeCol>
           <PriceItemTitleSt>
             Solo <span>(off-peak only)</span>
           </PriceItemTitleSt>
 
-          <PriceItemValueSt>£24</PriceItemValueSt>
+          <PriceItemValueSt>
+            £24{' '}
+            <span>
+              £26 from 1<sup>st</sup> March 2025
+            </span>
+          </PriceItemValueSt>
 
           <PriceItemDurationSt>
             <b>for a 2 hour session</b>

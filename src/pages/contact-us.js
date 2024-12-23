@@ -81,7 +81,7 @@ const IndexPage = () => (
 
         <p>
           <b>
-            10am – 3am
+            10am – Midnight
             <br />7 days a week
           </b>
         </p>
@@ -94,7 +94,6 @@ const IndexPage = () => (
           <li>6pm – 10pm</li>
           <li>7pm – 11pm</li>
           <li>8pm – Midnight</li>
-          <li>11pm – 3am (Nighthawk rate for existing clients only)</li>
         </ul>
       </ThreeColumnSectionSt>
 
