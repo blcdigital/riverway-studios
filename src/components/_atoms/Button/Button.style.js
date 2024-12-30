@@ -51,7 +51,7 @@ const WrapperSt = styled.button`
     `};
 
   ${({ level }) =>
-    level === 'link' &&
+    (level === 'link' || level === 'inline-link') &&
     css`
       ${getFontStyle({ size: 16, weight: WEIGHTS.bold })}
       padding: ${getSpacing(SPACING.small)} 0;
@@ -62,6 +62,13 @@ const WrapperSt = styled.button`
       &:focus {
         color: ${getColor({ color: COLORS.boston })};
       }
+    `};
+
+  ${({ level }) =>
+    level === 'inline-link' &&
+    css`
+      display: inline;
+      line-height: 2rem;
     `};
 `;
 
