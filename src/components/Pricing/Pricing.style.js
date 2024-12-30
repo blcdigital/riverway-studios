@@ -22,6 +22,14 @@ const BookButtonSt = styled.div`
   text-align: center;
 `;
 
+const RehearsalDisclaimerSt = styled.p`
+  margin: 0;
+  padding: ${getSpacing(SPACING.large)} ${getSpacing(SPACING.large)} 0;
+  background: ${getColor({ color: COLORS.white })};
+  color: #ff0000;
+  text-align: center;
+`;
+
 const DisclaimerSt = styled.p`
   margin-top: ${getSpacing()};
   padding: 0 ${getSpacing(SPACING.large)};
@@ -83,8 +91,7 @@ const OpeningTimesSt = styled.div`
 `;
 
 const PriceItemSt = styled.li`
-  padding: ${({ isInner }) =>
-    isInner ? getSpacing() : getSpacing(SPACING.xl)};
+  padding: ${getSpacing(SPACING.xl)};
   ${({ borderSmallTop }) =>
     borderSmallTop &&
     `border-top: 1px solid ${getColor({
@@ -93,8 +100,8 @@ const PriceItemSt = styled.li`
     })}`};
 
   ${media.medium`
-    width: ${({ isInner, isLarge }) =>
-      isLarge ? `100%` : isInner ? `33.33333%` : `50%`};
+    width: ${({ isLarge, isThreeCol }) =>
+      isLarge ? `100%` : isThreeCol ? '33.33333%' : `50%`};
     border: 0;
     ${({ borderMediumTop }) =>
       borderMediumTop &&
@@ -111,8 +118,8 @@ const PriceItemSt = styled.li`
   `};
 
   ${media.large`
-    width: ${({ isInner, isLarge }) =>
-      isLarge ? `50%` : isInner ? `33.33333%` : `25%`};
+    width: ${({ isLarge, isThreeCol }) =>
+      isLarge ? `50%` : isThreeCol ? `33.33333%` : `25%`};
     border: 0;
     ${({ borderLargeLeft }) =>
       borderLargeLeft &&
@@ -170,4 +177,5 @@ export {
   PriceItemDurationSt,
   PriceItemTitleSt,
   PriceItemValueSt,
+  RehearsalDisclaimerSt,
 };

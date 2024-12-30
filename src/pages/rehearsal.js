@@ -107,7 +107,7 @@ const RehearsalPage = () => (
           <b>Bass Amp</b>
           <br />
           250W Combo amp with built in tuner, overdrive and iOS/Android
-          compatible multieffects.
+          compatible multi-effects.
           <br />
           <b>£4</b> per amp per session.
         </p>
@@ -119,7 +119,11 @@ const RehearsalPage = () => (
           <br />
           60W Combo amp with distortion channel.
           <br />
-          <b>£3</b> per amp per session.
+          <b>£3</b> per amp per session{' '}
+          <i>
+            (<b>£4</b> from 1<sup>st</sup> March 2025)
+          </i>
+          .
         </p>
 
         <hr />
@@ -134,14 +138,19 @@ const RehearsalPage = () => (
       title="Pricing"
     >
       <Pricing showBookButton showOpeningTimes>
-        <PriceItemSt>
+        <PriceItemSt isThreeCol>
           <PriceItemTitleSt>Peak time</PriceItemTitleSt>
 
-          <PriceItemValueSt>£50</PriceItemValueSt>
+          <PriceItemValueSt>
+            £50{' '}
+            <span>
+              £55 from 1<sup>st</sup> March 2025
+            </span>
+          </PriceItemValueSt>
 
           <PriceItemDurationSt>
             <b>for a 4 hour session</b>
-            <span>£11 per additional hour</span>
+            <span>£11 per additional hour*</span>
           </PriceItemDurationSt>
 
           <PriceItemDescriptionSt>
@@ -159,14 +168,19 @@ const RehearsalPage = () => (
           </PriceItemDescriptionSt>
         </PriceItemSt>
 
-        <PriceItemSt borderSmallTop borderMediumLeft borderLargeLeft>
+        <PriceItemSt borderSmallTop borderMediumLeft borderLargeLeft isThreeCol>
           <PriceItemTitleSt>Off-peak</PriceItemTitleSt>
 
-          <PriceItemValueSt>£46</PriceItemValueSt>
+          <PriceItemValueSt>
+            £46{' '}
+            <span>
+              £50 from 1<sup>st</sup> March 2025
+            </span>
+          </PriceItemValueSt>
 
           <PriceItemDurationSt>
             <b>for a 4 hour session</b>
-            <span>£11 per additional hour</span>
+            <span>£11 per additional hour*</span>
           </PriceItemDurationSt>
 
           <PriceItemDescriptionSt>
@@ -177,39 +191,21 @@ const RehearsalPage = () => (
           </PriceItemDescriptionSt>
         </PriceItemSt>
 
-        <PriceItemSt borderSmallTop borderMediumTop borderLargeLeft>
-          <PriceItemTitleSt>Nighthawk session</PriceItemTitleSt>
-
-          <PriceItemValueSt>£44</PriceItemValueSt>
-
-          <PriceItemDurationSt>
-            <b>for a 4 hour session</b>
-          </PriceItemDurationSt>
-
-          <PriceItemDescriptionSt>
-            <p>
-              Nighthawk rehearsals are booked for 11pm-3am, 7 days a week, and
-              are an exclusive offer for existing clients only. Not available to
-              debut bookings.
-            </p>
-          </PriceItemDescriptionSt>
-        </PriceItemSt>
-
-        <PriceItemSt
-          borderSmallTop
-          borderMediumLeft
-          borderMediumTop
-          borderLargeLeft
-        >
+        <PriceItemSt borderSmallTop borderMediumLeft borderLargeLeft isThreeCol>
           <PriceItemTitleSt>
             Solo <span>(off-peak only)</span>
           </PriceItemTitleSt>
 
-          <PriceItemValueSt>£24</PriceItemValueSt>
+          <PriceItemValueSt>
+            £24{' '}
+            <span>
+              £26 from 1<sup>st</sup> March 2025
+            </span>
+          </PriceItemValueSt>
 
           <PriceItemDurationSt>
             <b>for a 2 hour session</b>
-            <span>£11 per additional hour</span>
+            <span>£11 per additional hour*</span>
           </PriceItemDurationSt>
 
           <PriceItemDescriptionSt>

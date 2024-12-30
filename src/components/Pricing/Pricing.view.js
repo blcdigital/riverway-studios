@@ -10,6 +10,7 @@ import {
   DisclaimerSt,
   ListSt,
   OpeningTimesSt,
+  RehearsalDisclaimerSt,
 } from './Pricing.style';
 
 function Pricing({
@@ -24,11 +25,16 @@ function Pricing({
       <ListSt>{children}</ListSt>
 
       {showBookButton && (
-        <BookButtonSt>
-          <Button as={Link} level="button" to="/contact-us">
-            Book
-          </Button>
-        </BookButtonSt>
+        <>
+          <RehearsalDisclaimerSt>
+            * £12 per additional hour from 1<sup>st</sup> March 2025
+          </RehearsalDisclaimerSt>
+          <BookButtonSt>
+            <Button as={Link} level="button" to="/contact-us">
+              Book
+            </Button>
+          </BookButtonSt>
+        </>
       )}
 
       {showOpeningTimes && (
@@ -36,7 +42,8 @@ function Pricing({
           <div>
             <p>
               <b>
-                We are open for rehearsals from 10am till 3am, 7 days a week.
+                We are open for rehearsals from 10am till midnight, 7 days a
+                week.
               </b>
             </p>
           </div>
@@ -50,7 +57,6 @@ function Pricing({
               <li>6pm – 10pm</li>
               <li>7pm – 11pm</li>
               <li>8pm – Midnight</li>
-              <li>11pm – 3am (Nighthawk rate for existing clients only)</li>
             </ul>
           </div>
         </OpeningTimesSt>
