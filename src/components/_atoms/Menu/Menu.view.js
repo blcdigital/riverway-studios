@@ -32,6 +32,17 @@ function Menu({ handleNavigationClick, isFooter }) {
           Gallery
         </Link>
       </li>
+      {isFooter && (
+        <li>
+          <Link
+            activeClassName="is-active"
+            to="/testimonials"
+            onClick={handleNavigationClick}
+          >
+            Testimonials
+          </Link>
+        </li>
+      )}
       <li>
         <Link
           activeClassName="is-active"
@@ -59,7 +70,7 @@ function Menu({ handleNavigationClick, isFooter }) {
           Contact Us
         </Link>
       </li>
-      {isFooter ? (
+      {isFooter && (
         <>
           <li>
             <Link
@@ -80,7 +91,7 @@ function Menu({ handleNavigationClick, isFooter }) {
             </Link>
           </li>
         </>
-      ) : null}
+      )}
     </ul>
   );
 }
