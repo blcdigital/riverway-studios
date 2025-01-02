@@ -67,8 +67,16 @@ const WrapperSt = styled.button`
   ${({ level }) =>
     level === 'inline-link' &&
     css`
-      display: inline;
-      line-height: 2rem;
+      display: inline-flex;
+      align-items: center;
+      gap: ${getSpacing()};
+      padding: ${getSpacing(SPACING.small)};
+      border-bottom: 0;
+
+      img {
+        width: 1.2rem;
+        height: 1.2rem;
+      }
     `};
 `;
 

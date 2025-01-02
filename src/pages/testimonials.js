@@ -11,6 +11,7 @@ import Coppola from 'images/coppola.jpg';
 import JamesNighthawk from 'images/james-nighthawk.jpg';
 import Katana from 'images/katana.jpg';
 import Starbug2 from 'images/starbug-2.jpg';
+import Spotify from 'images/spotify.png';
 import HeroImage from 'images/header-img-gallery.jpg';
 import Button from 'components/_atoms/Button';
 
@@ -63,7 +64,8 @@ const VouchersPage = () => (
           rel="noreferrer noopener"
           target="_blank"
         >
-          Listen to "No More" on Spotify
+          <img alt="" src={Spotify} />
+          Listen on Spotify
         </Button>
       </CtaSt>
     </ImageText>
@@ -74,8 +76,8 @@ const VouchersPage = () => (
       <Quote>
         <p>
           Recording our first album at Riverway Studios was a blast... learnt so
-          much from Jim that going forward that puts us in great shape for all
-          our future material...
+          much from Jim that going forward puts us in great shape for all our
+          future material...
         </p>
       </Quote>
 
@@ -103,7 +105,8 @@ const VouchersPage = () => (
           rel="noreferrer noopener"
           target="_blank"
         >
-          Listen to "Leave Me Alone" on Spotify
+          <img alt="" src={Spotify} />
+          Listen on Spotify
         </Button>
       </CtaSt>
     </ImageText>
@@ -144,7 +147,8 @@ const VouchersPage = () => (
           rel="noreferrer noopener"
           target="_blank"
         >
-          Listen to "Changing Views" on Spotify
+          <img alt="" src={Spotify} />
+          Listen on Spotify
         </Button>
       </CtaSt>
     </ImageText>
@@ -188,7 +192,8 @@ const VouchersPage = () => (
           rel="noreferrer noopener"
           target="_blank"
         >
-          Listen to "The Opinions of Strangers" on Spotify
+          <img alt="" src={Spotify} />
+          Listen on Spotify
         </Button>
       </CtaSt>
     </ImageText>
@@ -229,7 +234,8 @@ const VouchersPage = () => (
           rel="noreferrer noopener"
           target="_blank"
         >
-          Listen to "Jenny" on Spotify
+          <img alt="" src={Spotify} />
+          Listen on Spotify
         </Button>
       </CtaSt>
     </ImageText>
