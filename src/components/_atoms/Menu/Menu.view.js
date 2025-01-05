@@ -26,7 +26,7 @@ function Menu({ handleNavigationClick, isFooter }) {
       <li>
         <Link
           activeClassName="is-active"
-          to="/gallery"
+          to="/tour"
           onClick={handleNavigationClick}
         >
           Tour

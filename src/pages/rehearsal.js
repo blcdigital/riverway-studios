@@ -234,7 +234,7 @@ const RehearsalPage = () => (
       minHeight={400}
       smallScreenImage={TourSmall}
     >
-      <Button as={Link} to="/gallery" isNarrow level="clear">
+      <Button as={Link} to="/tour" isNarrow level="clear">
         See the gallery
       </Button>
     </ImageStrip>
