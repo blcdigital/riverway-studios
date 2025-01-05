@@ -23,7 +23,7 @@ const RecordingPage = () => (
   <Layout>
     <SEO title="Pricing" />
 
-    <Hero image={HeroImage} title="Pricing" />
+    <Hero image={HeroImage} title="Prices" />
 
     <SingleColumnContent
       align="center"

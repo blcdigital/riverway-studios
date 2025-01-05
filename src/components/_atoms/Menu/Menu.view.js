@@ -11,7 +11,7 @@ function Menu({ handleNavigationClick, isFooter }) {
           to="/recording"
           onClick={handleNavigationClick}
         >
-          Recording
+          Record
         </Link>
       </li>
       <li>
@@ -20,7 +20,7 @@ function Menu({ handleNavigationClick, isFooter }) {
           to="/rehearsal"
           onClick={handleNavigationClick}
         >
-          Rehearsal
+          Rehearse
         </Link>
       </li>
       <li>
@@ -29,36 +29,34 @@ function Menu({ handleNavigationClick, isFooter }) {
           to="/gallery"
           onClick={handleNavigationClick}
         >
-          Gallery
+          Tour
         </Link>
       </li>
-      {isFooter && (
-        <li>
-          <Link
-            activeClassName="is-active"
-            to="/testimonials"
-            onClick={handleNavigationClick}
-          >
-            Testimonials
-          </Link>
-        </li>
-      )}
+      <li>
+        <Link
+          activeClassName="is-active"
+          to="/testimonials"
+          onClick={handleNavigationClick}
+        >
+          Testimonials
+        </Link>
+      </li>
       <li>
         <Link
           activeClassName="is-active"
           to="/experiences-vouchers"
           onClick={handleNavigationClick}
         >
-          Vouchers
+          Gift
         </Link>
       </li>
       <li>
         <Link
           activeClassName="is-active"
-          to="/pricing"
+          to="/prices"
           onClick={handleNavigationClick}
         >
-          Pricing
+          Prices
         </Link>
       </li>
       <li>
@@ -67,7 +65,7 @@ function Menu({ handleNavigationClick, isFooter }) {
           to="/contact-us"
           onClick={handleNavigationClick}
         >
-          Contact Us
+          Contact
         </Link>
       </li>
       {isFooter && (

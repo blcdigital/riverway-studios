@@ -57,6 +57,14 @@ const RecordingPage = () => (
           stage of development and ask any questions directly to the Producer.
           We promise no hard sell! Email or call for details.
         </p>
+
+        <p>
+          <Link to="/testimonials" title="Read testimonials from artists">
+            Click here
+          </Link>{' '}
+          to see - and hear - some of the published artists that have recorded
+          with us.
+        </p>
       </TwoColumnSectionSt>
 
       <TwoColumnSectionSt>
