@@ -193,7 +193,7 @@ const RehearsalPage = () => (
 
         <PriceItemSt borderSmallTop borderMediumLeft borderLargeLeft isThreeCol>
           <PriceItemTitleSt>
-            Solo <span>(off-peak only)</span>
+            Solo <span>(off-peak)</span>
           </PriceItemTitleSt>
 
           <PriceItemValueSt>
