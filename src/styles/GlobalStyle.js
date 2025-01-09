@@ -23,11 +23,23 @@ const GlobalStyle = createGlobalStyle`
 
   h1, h2 {
     margin-top: 0;
-    ${getFontStyle({ size: 32, weight: WEIGHTS.bold })};
+    ${getFontStyle({ size: 20, weight: WEIGHTS.bold })};
     letter-spacing: 3px;
     line-height: 1;
     text-transform: uppercase;
     word-wrap: break-word;
+  }
+
+  h1 {
+    ${media.tiny`
+      ${getFontStyle({ size: 24, weight: WEIGHTS.bold })};
+    `};
+  }
+
+  h1 {
+    ${media.small`
+      ${getFontStyle({ size: 32, weight: WEIGHTS.bold })};
+    `};
   }
 
   h1 {
