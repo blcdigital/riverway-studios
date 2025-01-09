@@ -1,8 +1,8 @@
 import { css } from 'styled-components';
 
 export const BREAKPOINTS = {
-  tiny: 320,
-  small: 500,
+  tiny: 370,
+  small: 480,
   medium: 768,
   large: 920,
   wide: 1064,
