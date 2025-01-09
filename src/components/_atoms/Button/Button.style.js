@@ -51,7 +51,7 @@ const WrapperSt = styled.button`
     `};
 
   ${({ level }) =>
-    level === 'link' &&
+    (level === 'link' || level === 'inline-link') &&
     css`
       ${getFontStyle({ size: 16, weight: WEIGHTS.bold })}
       padding: ${getSpacing(SPACING.small)} 0;
@@ -61,6 +61,21 @@ const WrapperSt = styled.button`
       &:hover,
       &:focus {
         color: ${getColor({ color: COLORS.boston })};
+      }
+    `};
+
+  ${({ level }) =>
+    level === 'inline-link' &&
+    css`
+      display: inline-flex;
+      align-items: center;
+      gap: ${getSpacing()};
+      padding: ${getSpacing(SPACING.small)};
+      border-bottom: 0;
+
+      img {
+        width: 1.2rem;
+        height: 1.2rem;
       }
     `};
 `;

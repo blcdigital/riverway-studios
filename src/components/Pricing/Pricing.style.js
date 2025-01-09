@@ -152,6 +152,7 @@ const PriceItemTitleSt = styled.h3`
 
   span {
     color: ${getColor({ color: COLORS.black, luminosity: 80 })};
+    font-size: 0.8rem;
   }
 `;
 

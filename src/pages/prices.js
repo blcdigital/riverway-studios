@@ -23,7 +23,7 @@ const RecordingPage = () => (
   <Layout>
     <SEO title="Pricing" />
 
-    <Hero image={HeroImage} title="Pricing" />
+    <Hero image={HeroImage} title="Prices" />
 
     <SingleColumnContent
       align="center"
@@ -156,7 +156,7 @@ const RecordingPage = () => (
 
         <PriceItemSt borderSmallTop borderMediumLeft borderLargeLeft isThreeCol>
           <PriceItemTitleSt>
-            Solo <span>(off-peak only)</span>
+            Solo <span>(off-peak)</span>
           </PriceItemTitleSt>
 
           <PriceItemValueSt>
