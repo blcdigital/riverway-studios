@@ -10,7 +10,6 @@ import {
   DisclaimerSt,
   ListSt,
   OpeningTimesSt,
-  RehearsalDisclaimerSt,
 } from './Pricing.style';
 
 function Pricing({
@@ -26,9 +25,6 @@ function Pricing({
 
       {showBookButton && (
         <>
-          <RehearsalDisclaimerSt>
-            * £12 per additional hour from 1<sup>st</sup> March 2025
-          </RehearsalDisclaimerSt>
           <BookButtonSt>
             <Button as={Link} level="button" to="/contact-us">
               Book

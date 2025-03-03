@@ -104,16 +104,11 @@ const RecordingPage = () => (
         <PriceItemSt isThreeCol>
           <PriceItemTitleSt>Peak time</PriceItemTitleSt>
 
-          <PriceItemValueSt>
-            £50{' '}
-            <span>
-              £55 from 1<sup>st</sup> March 2025
-            </span>
-          </PriceItemValueSt>
+          <PriceItemValueSt>£55</PriceItemValueSt>
 
           <PriceItemDurationSt>
             <b>for a 4 hour session</b>
-            <span>£11 per additional hour</span>
+            <span>£12 per additional hour</span>
           </PriceItemDurationSt>
 
           <PriceItemDescriptionSt>
@@ -134,16 +129,11 @@ const RecordingPage = () => (
         <PriceItemSt borderSmallTop borderMediumLeft borderLargeLeft isThreeCol>
           <PriceItemTitleSt>Off-peak</PriceItemTitleSt>
 
-          <PriceItemValueSt>
-            £46{' '}
-            <span>
-              £50 from 1<sup>st</sup> March 2025
-            </span>
-          </PriceItemValueSt>
+          <PriceItemValueSt>£50</PriceItemValueSt>
 
           <PriceItemDurationSt>
             <b>for a 4 hour session</b>
-            <span>£11 per additional hour</span>
+            <span>£12 per additional hour</span>
           </PriceItemDurationSt>
 
           <PriceItemDescriptionSt>
@@ -159,16 +149,11 @@ const RecordingPage = () => (
             Solo <span>(off-peak)</span>
           </PriceItemTitleSt>
 
-          <PriceItemValueSt>
-            £24{' '}
-            <span>
-              £26 from 1<sup>st</sup> March 2025
-            </span>
-          </PriceItemValueSt>
+          <PriceItemValueSt>£26</PriceItemValueSt>
 
           <PriceItemDurationSt>
             <b>for a 2 hour session</b>
-            <span>£11 per additional hour</span>
+            <span>£12 per additional hour</span>
           </PriceItemDurationSt>
 
           <PriceItemDescriptionSt>
