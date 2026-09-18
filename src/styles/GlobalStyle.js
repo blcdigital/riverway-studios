@@ -159,6 +159,11 @@ const GlobalStyle = createGlobalStyle`
     }
   }
 
+  .price-notice {
+    color: #ff0000;
+    font-size: 1rem;
+  }
+
   .ril__outer {
     background-color: rgba(0, 0, 0, 0.85);
     outline: none;
