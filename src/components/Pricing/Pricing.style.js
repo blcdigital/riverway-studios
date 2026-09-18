@@ -162,8 +162,6 @@ const PriceItemValueSt = styled.p`
 
   span {
     display: block;
-    color: #ff0000;
-    font-size: 1rem;
   }
 `;
 

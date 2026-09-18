@@ -139,15 +139,15 @@ const RehearsalPage = () => (
 
           <PriceItemValueSt>
             £55
-            <span>
-              £60 from 1<sup>st</sup> March 2026
+            <span className="price-notice">
+              £60 from 1<sup>st</sup> January 2027
             </span>
           </PriceItemValueSt>
 
           <PriceItemDurationSt>
             <b>for a 4 hour session</b>
-            <span>
-              £12 per additional hour (£14 from 1<sup>st</sup> March 2026)
+            <span className="price-notice">
+              £12 per additional hour (£14 from 1<sup>st</sup> January 2027)
             </span>
           </PriceItemDurationSt>
 
@@ -171,15 +171,15 @@ const RehearsalPage = () => (
 
           <PriceItemValueSt>
             £50
-            <span>
-              £55 from 1<sup>st</sup> March 2026
+            <span className="price-notice">
+              £55 from 1<sup>st</sup> January 2027
             </span>
           </PriceItemValueSt>
 
           <PriceItemDurationSt>
             <b>for a 4 hour session</b>
-            <span>
-              £12 per additional hour (£14 from 1<sup>st</sup> March 2026)
+            <span className="price-notice">
+              £12 per additional hour (£14 from 1<sup>st</sup> January 2027)
             </span>
           </PriceItemDurationSt>
 
@@ -198,15 +198,15 @@ const RehearsalPage = () => (
 
           <PriceItemValueSt>
             £26
-            <span>
-              £30 from 1<sup>st</sup> March 2026
+            <span className="price-notice">
+              £30 from 1<sup>st</sup> January 2027
             </span>
           </PriceItemValueSt>
 
           <PriceItemDurationSt>
             <b>for a 2 hour session</b>
-            <span>
-              £12 per additional hour (£14 from 1<sup>st</sup> March 2026)
+            <span className="price-notice">
+              £12 per additional hour (£14 from 1<sup>st</sup> January 2027)
             </span>
           </PriceItemDurationSt>
 
