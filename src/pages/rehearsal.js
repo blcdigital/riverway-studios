@@ -137,11 +137,18 @@ const RehearsalPage = () => (
         <PriceItemSt isThreeCol>
           <PriceItemTitleSt>Peak time</PriceItemTitleSt>
 
-          <PriceItemValueSt>£55</PriceItemValueSt>
+          <PriceItemValueSt>
+            £55
+            <span>
+              £60 from 1<sup>st</sup> March 2026
+            </span>
+          </PriceItemValueSt>
 
           <PriceItemDurationSt>
             <b>for a 4 hour session</b>
-            <span>£12 per additional hour</span>
+            <span>
+              £12 per additional hour (£14 from 1<sup>st</sup> March 2026)
+            </span>
           </PriceItemDurationSt>
 
           <PriceItemDescriptionSt>
@@ -162,11 +169,18 @@ const RehearsalPage = () => (
         <PriceItemSt borderSmallTop borderMediumLeft borderLargeLeft isThreeCol>
           <PriceItemTitleSt>Off-peak</PriceItemTitleSt>
 
-          <PriceItemValueSt>£50</PriceItemValueSt>
+          <PriceItemValueSt>
+            £50
+            <span>
+              £55 from 1<sup>st</sup> March 2026
+            </span>
+          </PriceItemValueSt>
 
           <PriceItemDurationSt>
             <b>for a 4 hour session</b>
-            <span>£12 per additional hour</span>
+            <span>
+              £12 per additional hour (£14 from 1<sup>st</sup> March 2026)
+            </span>
           </PriceItemDurationSt>
 
           <PriceItemDescriptionSt>
@@ -182,11 +196,18 @@ const RehearsalPage = () => (
             Solo <span>(off-peak)</span>
           </PriceItemTitleSt>
 
-          <PriceItemValueSt>£26</PriceItemValueSt>
+          <PriceItemValueSt>
+            £26
+            <span>
+              £30 from 1<sup>st</sup> March 2026
+            </span>
+          </PriceItemValueSt>
 
           <PriceItemDurationSt>
             <b>for a 2 hour session</b>
-            <span>£12 per additional hour</span>
+            <span>
+              £12 per additional hour (£14 from 1<sup>st</sup> March 2026)
+            </span>
           </PriceItemDurationSt>
 
           <PriceItemDescriptionSt>
