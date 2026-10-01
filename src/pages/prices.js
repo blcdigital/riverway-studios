@@ -104,11 +104,21 @@ const RecordingPage = () => (
         <PriceItemSt isThreeCol>
           <PriceItemTitleSt>Peak time</PriceItemTitleSt>
 
-          <PriceItemValueSt>£55</PriceItemValueSt>
+          <PriceItemValueSt>
+            £55
+            <span className="price-notice">
+              £60 from 1<sup>st</sup> January 2027
+            </span>
+          </PriceItemValueSt>
 
           <PriceItemDurationSt>
             <b>for a 4 hour session</b>
-            <span>£12 per additional hour</span>
+            <span>
+              £12 per additional hour{' '}
+              <span className="price-notice price-notice--inline">
+                (£14 from 1<sup>st</sup> January 2027)
+              </span>
+            </span>
           </PriceItemDurationSt>
 
           <PriceItemDescriptionSt>
@@ -129,11 +139,21 @@ const RecordingPage = () => (
         <PriceItemSt borderSmallTop borderMediumLeft borderLargeLeft isThreeCol>
           <PriceItemTitleSt>Off-peak</PriceItemTitleSt>
 
-          <PriceItemValueSt>£50</PriceItemValueSt>
+          <PriceItemValueSt>
+            £50
+            <span className="price-notice">
+              £55 from 1<sup>st</sup> January 2027
+            </span>
+          </PriceItemValueSt>
 
           <PriceItemDurationSt>
             <b>for a 4 hour session</b>
-            <span>£12 per additional hour</span>
+            <span>
+              £12 per additional hour{' '}
+              <span className="price-notice price-notice--inline">
+                (£14 from 1<sup>st</sup> January 2027)
+              </span>
+            </span>
           </PriceItemDurationSt>
 
           <PriceItemDescriptionSt>
@@ -149,11 +169,21 @@ const RecordingPage = () => (
             Solo <span>(off-peak)</span>
           </PriceItemTitleSt>
 
-          <PriceItemValueSt>£26</PriceItemValueSt>
+          <PriceItemValueSt>
+            £26
+            <span className="price-notice">
+              £30 from 1<sup>st</sup> January 2027
+            </span>
+          </PriceItemValueSt>
 
           <PriceItemDurationSt>
             <b>for a 2 hour session</b>
-            <span>£12 per additional hour</span>
+            <span>
+              £12 per additional hour{' '}
+              <span className="price-notice price-notice--inline">
+                (£14 from 1<sup>st</sup> January 2027)
+              </span>
+            </span>
           </PriceItemDurationSt>
 
           <PriceItemDescriptionSt>
