@@ -53,7 +53,7 @@ const IndexPage = () => (
       <p>
         Riverway Studios combines the best equipped music recording studios and
         the largest set of music rehearsal studios in the Hertfordshire and
-        Essex area. We have been open for over 14 years now, and are a well
+        Essex area. We have been open for over 19 years now, and are a well
         known and loved part of the local music community! Our practice rooms
         are home to many faces of the local music scene; come join us!
       </p>
